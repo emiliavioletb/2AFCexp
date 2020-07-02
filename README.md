@@ -15,3 +15,12 @@ Line 240 & 336 = 'Fs = 22050'
 Fixed SNR study
 
 'Parameters practice' has relative path for sound files in the practice loop (/Syllables/Ka.mat)
+
+56 - originPath='/Users/emilia/Desktop/Tobias/Psychopy/True experiment.py'
+
+839 - filename = ('/Users/emilia/Desktop/FixedSNR/Syllables/' + str(shuffled_syllable_i) +'.mat') # This is entire path but can be changed to relative path
+
+844 - filename2 = ('/Users/emilia/Desktop/FixedSNR/SNR_list/' + str(2) +'.mat')
+
+1504 - noise = scipy.io.loadmat('SNR_list/' + filename, appendmat=False) # Relative path 
+
