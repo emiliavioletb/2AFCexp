@@ -12,7 +12,7 @@ Both 'parameters.csv' & 'parameters.xlsx' use relative path Syllables/Ka.mat.
 
 Line 240 & 336 = 'Fs = 22050'
 
-Fixed SNR study
+FIXED SNR STUDY 
 
 'Parameters practice' has relative path for sound files in the practice loop (/Syllables/Ka.mat)
 
@@ -28,3 +28,5 @@ Sending the triggers: variable = 'trig' (line
 Sending the stimulation: variable = 'stim' (line 
 
 Line 1521: Fs = 22050 
+
+TO CHANGE THE SNR OF THE ENTIRE FIXED SNR STUDY: line 1503 (for trials) & line 844 (for practice trials)
