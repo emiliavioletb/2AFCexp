@@ -10,4 +10,6 @@ Staircase study: lines with specific path
 
 Both 'parameters.csv' & 'parameters.xlsx' use relative path Syllables/Ka.mat.
 
+Line 240 & 336 = 'Fs = 22050'
+
 Fixed SNR study
