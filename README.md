@@ -24,3 +24,7 @@ Fixed SNR study
 
 1504 - noise = scipy.io.loadmat('SNR_list/' + filename, appendmat=False) # Relative path 
 
+Sending the triggers: variable = 'trig' (line 
+Sending the stimulation: variable = 'stim' (line 
+
+Line 1521: Fs = 22050 
