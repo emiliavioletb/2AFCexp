@@ -1,5 +1,7 @@
 # 2AFCexp
 
+N.B. TO START THE EXPERIMENTS PRESS THE 's' KEY ON THE START SCREEN ('Please wait for the experimenter')
+
 STAIRCASE 
 
 62 - originPath='/Users/emilia/Desktop/Staircase/staircase_trial.py'
