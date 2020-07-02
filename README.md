@@ -9,3 +9,5 @@ Staircase study: lines with specific path
 2580 - filename2 = ('/Users/emilia/Desktop/Staircase/SNR_list/' + str(level_next) +'.mat')
 
 Both 'parameters.csv' & 'parameters.xlsx' use relative path Syllables/Ka.mat.
+
+Fixed SNR study
