@@ -12,6 +12,8 @@ Both 'parameters.csv' & 'parameters.xlsx' use relative path Syllables/Ka.mat.
 
 Line 240 & 336 = 'Fs = 22050'
 
+
+
 FIXED SNR STUDY 
 
 'Parameters practice' has relative path for sound files in the practice loop (/Syllables/Ka.mat)
