@@ -24,9 +24,9 @@ FIXED SNR STUDY
 
 1504 - noise = scipy.io.loadmat('SNR_list/' + filename, appendmat=False) # Relative path 
 
-Sending the triggers: variable = 'trig' (line 
-Sending the stimulation: variable = 'stim' (line 
+Sending the triggers: variable = 'trig' (line 1448)
+Sending the stimulation: variable = 'stim' (line 1460)
 
-Line 1521: Fs = 22050 
+Line 1504: Fs = 22050 
 
-TO CHANGE THE SNR OF THE ENTIRE FIXED SNR STUDY: line 1503 (for trials) & line 844 (for practice trials)
+TO CHANGE THE SNR OF THE ENTIRE FIXED SNR STUDY: line 1486 (for trials) & line 844 (for practice trials) - SNR IS CURRENTLY SET TO +2 dB
