@@ -1,6 +1,6 @@
 # 2AFCexp
 
-Staircase study: lines with specific path
+STAIRCASE 
 
 62 - originPath='/Users/emilia/Desktop/Staircase/staircase_trial.py'
 
