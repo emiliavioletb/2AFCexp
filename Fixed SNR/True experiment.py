@@ -15,7 +15,7 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock
+from psychopy import gui, visual, core, data, event, logging, clock
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 import numpy as np  # whole numpy lib is available, prepend 'np.'
@@ -27,10 +27,11 @@ import sys  # to get file system encoding
 import pandas as pd
 import scipy.io
 import random
+from TDT_function import conditions
 
 from psychopy.hardware import keyboard
 
-
+#%% Set Up Path and Information
 
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
@@ -65,13 +66,16 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Start Code - component code to be run before the window creation
 
-# Setup the Window
+
+#%% Setup the Window
+
 win = visual.Window(
-    size=(1024, 768), fullscr=True, screen=0, 
+    size=(1024, 768), fullscr=False, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color='#000000', colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
+
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
 if expInfo['frameRate'] != None:
@@ -80,7 +84,10 @@ else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
 
 # create a default keyboard (e.g. to check for escape)
+    
 defaultKeyboard = keyboard.Keyboard()
+
+#%% Initialize Components for screen 
 
 # Initialize components for Routine "start_screen"
 start_screenClock = core.Clock()
@@ -156,9 +163,9 @@ practice_trial_text = visual.TextStim(win=win, name='pratice_trial_text',
     languageStyle='LTR',
     depth=0.0);
 pratctice_trial_key_resp = keyboard.Keyboard()
-practice_sound = sound.Sound('A', secs=-1, stereo=True, sampleRate = 22050, hamming=True,
-    name='practice_sound')
-practice_sound.setVolume(1)
+#practice_sound = sound.Sound('A', secs=-1, stereo=True, sampleRate = 22050, hamming=True,
+#    name='practice_sound')
+#practice_sound.setVolume(1)
 
 # Initialize components for Routine "blank_screen"
 blank_screenClock = core.Clock()
@@ -211,9 +218,9 @@ trial_text = visual.TextStim(win=win, name='trial_text',
     languageStyle='LTR',
     depth=0.0);
 trial_key_resp = keyboard.Keyboard()
-trial_sound = sound.Sound('A', secs=-1, stereo=True, sampleRate = 22050, hamming=True,
-    name='trial_sound')
-trial_sound.setVolume(1)
+#trial_sound = sound.Sound('A', secs=-1, stereo=True, sampleRate = 22050, hamming=True,
+#    name='trial_sound')
+#trial_sound.setVolume(1)
 
 # Initialize components for Routine "intrial_break"
 intrial_breakClock = core.Clock()
@@ -247,16 +254,22 @@ end_screen_text = visual.TextStim(win=win, name='end_screen_text',
     languageStyle='LTR',
     depth=0.0);
 
-# Create some handy timers
+#%%  Create some handy timers
+
 globalClock = core.Clock()  # to track the time since experiment started
 routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
 
-# ------Prepare to start Routine "start_screen"-------
+
+
+#%% Prepare to start Routine "start_screen"
+
 continueRoutine = True
+
 # update component  for each repeat
 start_screen_key_resp.keys = []
 start_screen_key_resp.rt = []
 _start_screen_key_resp_allKeys = []
+
 # keep track of which components have finished
 start_screenComponents = [start_screen_key_resp, start_screen_text]
 for thisComponent in start_screenComponents:
@@ -266,13 +279,15 @@ for thisComponent in start_screenComponents:
     thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+        
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 start_screenClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "start_screen"-------
+#%% Run Routine "start_screen"
+
 while continueRoutine:
     # get current time
     t = start_screenClock.getTime()
@@ -315,6 +330,8 @@ while continueRoutine:
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
         core.quit()
+        win.close()
+        
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
@@ -329,10 +346,12 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "start_screen"-------
+#%% Ending Routine "start_screen"
+
 for thisComponent in start_screenComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
+        
 # check responses
 if start_screen_key_resp.keys in ['', [], None]:  # No response was made
     start_screen_key_resp.keys = None
@@ -347,9 +366,11 @@ thisExp.addData('start_screen_text.stopped', start_screen_text.tStopRefresh)
 # the Routine "start_screen" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "blank_screen"-------
+#%% Prepare to start Routine "blank_screen"
+
 continueRoutine = True
 routineTimer.add(0.500000)
+
 # update component parameters for each repeat
 # keep track of which components have finished
 blank_screenComponents = [blank_screen_text]
@@ -360,13 +381,15 @@ for thisComponent in blank_screenComponents:
     thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+        
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 blank_screenClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "blank_screen"-------
+#%% Run Routine "blank_screen"
+
 while continueRoutine and routineTimer.getTime() > 0:
     # get current time
     t = blank_screenClock.getTime()
@@ -409,19 +432,23 @@ while continueRoutine and routineTimer.getTime() > 0:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "blank_screen"-------
+#%% Ending Routine "blank_screen"
+
 for thisComponent in blank_screenComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 thisExp.addData('blank_screen_text.started', blank_screen_text.tStartRefresh)
 thisExp.addData('blank_screen_text.stopped', blank_screen_text.tStopRefresh)
 
-# ------Prepare to start Routine "instructions"-------
+#%% Prepare to start Routine "instructions"
+
 continueRoutine = True
+
 # update component parameters for each repeat
 instructions1_key_resp.keys = []
 instructions1_key_resp.rt = []
 _instructions1_key_resp_allKeys = []
+
 # keep track of which components have finished
 instructionsComponents = [instructions1_text, instructions1_key_resp]
 for thisComponent in instructionsComponents:
@@ -431,13 +458,15 @@ for thisComponent in instructionsComponents:
     thisComponent.tStopRefresh = None
     if hasattr(thisComponent, 'status'):
         thisComponent.status = NOT_STARTED
+        
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 instructionsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "instructions"-------
+#%% Run Routine "instructions"
+
 while continueRoutine:
     # get current time
     t = instructionsClock.getTime()
@@ -494,7 +523,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "instructions"-------
+#%% Ending Routine "instructions"
+
 for thisComponent in instructionsComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
@@ -512,7 +542,8 @@ thisExp.nextEntry()
 # the Routine "instructions" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "instructions2"-------
+#%% Prepare to start Routine "instructions2"
+
 continueRoutine = True
 # update component parameters for each repeat
 instructions2_key_resp.keys = []
@@ -533,7 +564,8 @@ _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 instructions2Clock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "instructions2"-------
+#%% Run Routine "instructions2"
+
 while continueRoutine:
     # get current time
     t = instructions2Clock.getTime()
@@ -590,7 +622,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "instructions2"-------
+#%% Ending Routine "instructions2"
+
 for thisComponent in instructions2Components:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
@@ -608,7 +641,8 @@ thisExp.nextEntry()
 # the Routine "instructions2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "practice_instructions"-------
+#%% Prepare to start Routine "practice_instructions"
+
 continueRoutine = True
 # update component parameters for each repeat
 practice_instructions_key_resp.keys = []
@@ -629,7 +663,8 @@ _timeToFirstFrame = win.getFutureFlipTime(clock="now")
 practice_instructionsClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "practice_instructions"-------
+#%% Run Routine "practice_instructions"
+
 while continueRoutine:
     # get current time
     t = practice_instructionsClock.getTime()
@@ -686,7 +721,8 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "practice_instructions"-------
+#%% Ending Routine "practice_instructions"
+
 for thisComponent in practice_instructionsComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
@@ -724,6 +760,7 @@ for thisPractice_outer_loop in practice_outer_loop:
             exec('{} = thisPractice_outer_loop[paramName]'.format(paramName))
     
     # ------Prepare to start Routine "cross"-------
+    
     continueRoutine = True
     routineTimer.add(0.500000)
     # update component parameters for each repeat
@@ -743,6 +780,7 @@ for thisPractice_outer_loop in practice_outer_loop:
     frameN = -1
     
     # -------Run Routine "cross"-------
+    
     while continueRoutine and routineTimer.getTime() > 0:
         # get current time
         t = crossClock.getTime()
@@ -786,6 +824,7 @@ for thisPractice_outer_loop in practice_outer_loop:
             win.flip()
     
     # -------Ending Routine "cross"-------
+    
     for thisComponent in crossComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
@@ -817,6 +856,7 @@ for thisPractice_outer_loop in practice_outer_loop:
                 exec('{} = thispractice_inner_loop[paramName]'.format(paramName))
     
         # ------Prepare to start Routine "Trial"-------
+        
         continueRoutine = True
         # update component parameters for each repeat
         n = range(0,len(Pair_list2))
@@ -836,22 +876,22 @@ for thisPractice_outer_loop in practice_outer_loop:
         gender = gender_list2.pop(index)
     
         shuffled_syllable_i = syllable_list2.pop(index)
-        filename = ('/Users/emilia/Desktop/FixedSNR/Syllables/' + str(shuffled_syllable_i) +'.mat')
+        filename = (r'\\icnas2.cc.ic.ac.uk\phg17\GitHub\2AFCexp\Fixed SNR\Syllables/' + str(shuffled_syllable_i) +'.mat')
         syllable = scipy.io.loadmat(shuffled_syllable_i, appendmat=False)
         syllable = syllable['CV']
         syllable = syllable.ravel()
         
-        filename2 = ('/Users/emilia/Desktop/FixedSNR/SNR_list/' + str(2) +'.mat')
+        filename2 = (r'\\icnas2.cc.ic.ac.uk\phg17\GitHub\2AFCexp\Fixed SNR/SNR_list/' + str(2) +'.mat')
         noise_file2 = scipy.io.loadmat(filename2, appendmat=False)
         noise2 = noise_file2['newSNR']
         noise2 = noise2.ravel()
         Stimulus = syllable + noise2
     
-        practice_sound.setSound(Stimulus, hamming=True)
-        practice_sound.setVolume(1, log=False)
+        #practice_sound.setSound(Stimulus, hamming=True)
+        #practice_sound.setVolume(1, log=False)
         
         # keep track of which components have finished
-        practice_trialComponents = [practice_trial_text, pratctice_trial_key_resp, practice_sound]
+        practice_trialComponents = [practice_trial_text, pratctice_trial_key_resp]
         for thisComponent in practice_trialComponents:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -866,6 +906,7 @@ for thisPractice_outer_loop in practice_outer_loop:
         frameN = -1
     
         # -------Run Routine "Trial"-------
+        
         while continueRoutine:
             # get current time
             t = practice_trialClock.getTime()
@@ -927,12 +968,12 @@ for thisPractice_outer_loop in practice_outer_loop:
                     practice_trial_text.setAutoDraw(False)
                     
             # start/stop sound_1
-            if practice_sound.status == NOT_STARTED and tThisFlip >= 0.1-frameTolerance:
-                # keep track of start time/frame for later
-                practice_sound.frameNStart = frameN  # exact frame index
-                practice_sound.tStart = t  # local t and not account for scr refresh
-                practice_sound.tStartRefresh = tThisFlipGlobal  # on global time
-                practice_sound.play(when=win)  # sync with win flip
+            #if practice_sound.status == NOT_STARTED and tThisFlip >= 0.1-frameTolerance:
+            #    # keep track of start time/frame for later
+            #    practice_sound.frameNStart = frameN  # exact frame index
+            #    practice_sound.tStart = t  # local t and not account for scr refresh
+            #    practice_sound.tStartRefresh = tThisFlipGlobal  # on global time
+            #    practice_sound.play(when=win)  # sync with win flip
         
             # check for quit (typically the Esc key)
             if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -952,13 +993,14 @@ for thisPractice_outer_loop in practice_outer_loop:
                 win.flip()
         
         # -------Ending Routine "practice_trial"-------
+        
         for thisComponent in practice_trialComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         practice_inner_loop.addData('practice_trial_text.started', practice_trial_text.tStartRefresh)
         practice_inner_loop.addData('practice_trial_text.stopped', practice_trial_text.tStopRefresh)
-        practice_inner_loop.addData('practice_sound.started', practice_sound.tStartRefresh)
-        practice_inner_loop.addData('practice_sound.stopped', practice_sound.tStopRefresh)
+        #practice_inner_loop.addData('practice_sound.started', practice_sound.tStartRefresh)
+        #practice_inner_loop.addData('practice_sound.stopped', practice_sound.tStopRefresh)
         practice_inner_loop.addData('Syllable played', syllable)
         practice_inner_loop.addData('Pair presented', Pair)
         # check responses
@@ -980,6 +1022,7 @@ for thisPractice_outer_loop in practice_outer_loop:
         routineTimer.reset()
         
         # ------Prepare to start Routine "blank_screen"-------
+        
         continueRoutine = True
         routineTimer.add(0.500000)
         # update component parameters for each repeat
@@ -999,6 +1042,7 @@ for thisPractice_outer_loop in practice_outer_loop:
         frameN = -1
         
         # -------Run Routine "blank_screen"-------
+        
         while continueRoutine and routineTimer.getTime() > 0:
             # get current time
             t = blank_screenClock.getTime()
@@ -1042,6 +1086,7 @@ for thisPractice_outer_loop in practice_outer_loop:
                 win.flip()
         
         # -------Ending Routine "blank_screen"-------
+        
         for thisComponent in blank_screenComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
@@ -1052,6 +1097,7 @@ for thisPractice_outer_loop in practice_outer_loop:
     # completed 3 repeats of 'practice_inner_loop'
     
     # ------Prepare to start Routine "post instructions"-------
+    
     continueRoutine = True
     # update component parameters for each repeat
     post_practice_instructions_key_resp.keys = []
@@ -1073,6 +1119,7 @@ for thisPractice_outer_loop in practice_outer_loop:
     frameN = -1
     
     # -------Run Routine "starttrials"-------
+    
     while continueRoutine:
         # get current time
         t = post_practice_instructionsClock.getTime()
@@ -1193,8 +1240,8 @@ for thisOuter_loop in outer_loop:
     # Load stimulation & sound stimuli arrays. 
     frequency_two_array = np.load('array_two.npy')
     frequency_six_array = np.load('array_six.npy')
-    random_stim_array = np.load('random_stim.npy')
-    no_stim_array = np.load('no_stim.npy')
+    #random_stim_array = np.load('random_stim.npy')
+    #no_stim_array = np.load('no_stim.npy')
     two_array = np.load('twohzstimuli.npy')
     six_array = np.load('sixhzstimuli.npy')
     
@@ -1433,7 +1480,7 @@ for thisOuter_loop in outer_loop:
                 
             elif T_index == 8: 
                 tactile_freq = 'None'
-                frequency_array = no_stim_array
+                frequency_array = np.zeros(len(six_array))
                 cond = 'No stim'
                 syl_list = 'None'
                 stimuli_array = two_array
@@ -1453,7 +1500,8 @@ for thisOuter_loop in outer_loop:
             if tactile_freq == 'Random': 
                 n = 20
                 R_index = np.random.choice(n)
-                rand = random_stim_array[R_index] 
+                #rand = random_stim_array[R_index] 
+                rand =  np.zeros(len(six_array))
                 for i in range(0, Ltwo):
                     frequency_array = rand[i:i+Ltwo]
 
@@ -1507,11 +1555,11 @@ for thisOuter_loop in outer_loop:
             reaction_time = (reaction_time+ len(delay))/Fs
                 
             trial_text.setText(Pair_show)
-            trial_sound.setSound(Stimulus, hamming=True)
-            trial_sound.setVolume(1, log=False)
+            #trial_sound.setSound(Stimulus, hamming=True)
+            #trial_sound.setVolume(1, log=False)
             
             # keep track of which components have finished
-            trial_Components = [trial_text, trial_key_resp, trial_sound]
+            trial_Components = [trial_text, trial_key_resp]
             for thisComponent in trial_Components:
                 thisComponent.tStart = None
                 thisComponent.tStop = None
@@ -1592,21 +1640,21 @@ for thisOuter_loop in outer_loop:
                         trial_text.setAutoDraw(False)
                     
                 # start/stop trial_sound
-                if trial_sound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    trial_sound.frameNStart = frameN  # exact frame index
-                    trial_sound.tStart = t  # local t and not account for scr refresh
-                    trial_sound.tStartRefresh = tThisFlipGlobal  # on global time
-                    trial_sound.play(when=win)  # sync with win flip
+                #if trial_sound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                #    # keep track of start time/frame for later
+                #    trial_sound.frameNStart = frameN  # exact frame index
+                #    trial_sound.tStart = t  # local t and not account for scr refresh
+                #    trial_sound.tStartRefresh = tThisFlipGlobal  # on global time
+                #    trial_sound.play(when=win)  # sync with win flip
                     
-                if trial_sound.status == STARTED:
-                    # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > trial_sound.tStartRefresh + length-frameTolerance:
-                        # keep track of stop time/frame for later
-                        trial_sound.tStop = t  # not accounting for scr refresh
-                        trial_sound.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(trial_sound, 'tStopRefresh')  # time at next scr refresh
-                        trial_sound.stop()
+                #if trial_sound.status == STARTED:
+                #    # is it time to stop? (based on global clock, using actual start)
+                #    if tThisFlipGlobal > trial_sound.tStartRefresh + length-frameTolerance:
+                #        # keep track of stop time/frame for later
+                #        trial_sound.tStop = t  # not accounting for scr refresh
+                #        trial_sound.frameNStop = frameN  # exact frame index
+                #        win.timeOnFlip(trial_sound, 'tStopRefresh')  # time at next scr refresh
+                #        trial_sound.stop()
                 
                 # check for quit (typically the Esc key)
                 if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1638,8 +1686,8 @@ for thisOuter_loop in outer_loop:
             trials_inner_loop.addData('Pair', Pair)
             trials_inner_loop.addData('Pair_show', Pair_show)
             trials_inner_loop.addData('Gender', Gender)
-            trials_inner_loop.addData('Sound started', trial_sound.tStartRefresh)
-            trials_inner_loop.addData('Sound stopped', trial_sound.tStopRefresh)
+            #trials_inner_loop.addData('Sound started', trial_sound.tStartRefresh)
+            #trials_inner_loop.addData('Sound stopped', trial_sound.tStopRefresh)
             # check responses
             if trial_key_resp.keys in ['', [], None]:  # No response was made
                 trial_key_resp.keys = None

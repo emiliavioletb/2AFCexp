@@ -1,0 +1,506 @@
+1850.7189 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='#000000', colorSpace='hex', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023226CE5FC8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002322F2F2E88>, multiSample=False, name='window1', numSamples=2, pos=[448.0, 156.0], screen=0, size=array([1024,  768]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+1850.7190 	EXP 	window1: recordFrameIntervals = False
+1850.8021 	EXP 	window1: recordFrameIntervals = True
+1850.8937 	EXP 	window1: recordFrameIntervals = False
+1850.8970 	EXP 	Created start_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='start_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Please wait for the experimenter. ', units='height', win=Window(...), wrapWidth=1)
+1850.8976 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1850.9113 	EXP 	Created instructions1_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions1_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1850.9270 	EXP 	Created instructions2_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions2_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1850.9378 	EXP 	Created practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica ', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1850.9389 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+1850.9438 	EXP 	Created pratice_trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='pratice_trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+1850.9444 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1850.9632 	EXP 	Created Post_practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Post_practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1850.9642 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+1850.9648 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1850.9720 	EXP 	Created trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+1850.9823 	EXP 	Created intrial_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='intrial_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1850.9891 	EXP 	Created middle_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='middle_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1850.9930 	EXP 	Created end_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='end_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1851.0016 	EXP 	start_screen_text: autoDraw = True
+1851.2025 	DATA 	Keypress: capslock
+1851.8698 	DATA 	Keypress: space
+1852.7208 	DATA 	Keypress: s
+1852.7287 	EXP 	start_screen_text: autoDraw = False
+1852.7287 	EXP 	blank_screen_text: autoDraw = True
+1853.2292 	EXP 	blank_screen_text: autoDraw = False
+1853.2292 	EXP 	blank_screen_text: autoDraw = False
+1853.2292 	EXP 	instructions1_text: autoDraw = True
+1853.5966 	DATA 	Keypress: space
+1853.6047 	EXP 	instructions1_text: autoDraw = False
+1853.6047 	EXP 	instructions2_text: autoDraw = True
+1853.8808 	DATA 	Keypress: space
+1853.8967 	EXP 	instructions2_text: autoDraw = False
+1853.8967 	EXP 	practice_instructions_text: autoDraw = True
+1854.1304 	DATA 	Keypress: space
+1854.1309 	EXP 	Created sequence: random, trialTypes=1, nReps=2, seed=None
+1854.1311 	EXP 	New trial (rep=0, index=0): None
+1854.1386 	EXP 	practice_instructions_text: autoDraw = False
+1854.1386 	EXP 	cross_polygon: autoDraw = True
+1854.6316 	EXP 	Created sequence: random, trialTypes=1, nReps=24, seed=None
+1854.6371 	EXP 	New trial (rep=0, index=0): None
+1859.9946 	EXP 	window1: mouseVisible = True
+1920.5975 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='#000000', colorSpace='hex', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023226CE5FC8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002322708DC88>, multiSample=False, name='window1', numSamples=2, pos=[448.0, 156.0], screen=0, size=array([1024,  768]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+1920.5975 	EXP 	window1: recordFrameIntervals = False
+1920.6809 	EXP 	window1: recordFrameIntervals = True
+1920.7729 	EXP 	window1: recordFrameIntervals = False
+1920.7764 	EXP 	Created start_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='start_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Please wait for the experimenter. ', units='height', win=Window(...), wrapWidth=1)
+1920.7770 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1920.7917 	EXP 	Created instructions1_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions1_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1920.8071 	EXP 	Created instructions2_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions2_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1920.8175 	EXP 	Created practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica ', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1920.8186 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+1920.8231 	EXP 	Created pratice_trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='pratice_trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+1920.8237 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1920.8416 	EXP 	Created Post_practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Post_practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1920.8426 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+1920.8435 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1920.8500 	EXP 	Created trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+1920.8597 	EXP 	Created intrial_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='intrial_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1920.8664 	EXP 	Created middle_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='middle_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1920.8703 	EXP 	Created end_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='end_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1920.8803 	EXP 	start_screen_text: autoDraw = True
+1921.6575 	DATA 	Keypress: s
+1921.6732 	EXP 	start_screen_text: autoDraw = False
+1921.6732 	EXP 	blank_screen_text: autoDraw = True
+1922.1736 	EXP 	blank_screen_text: autoDraw = False
+1922.1736 	EXP 	instructions1_text: autoDraw = True
+1922.4660 	DATA 	Keypress: space
+1922.4739 	EXP 	instructions1_text: autoDraw = False
+1922.4739 	EXP 	instructions2_text: autoDraw = True
+1922.8332 	DATA 	Keypress: space
+1922.8409 	EXP 	instructions2_text: autoDraw = False
+1922.8409 	EXP 	practice_instructions_text: autoDraw = True
+1923.1501 	DATA 	Keypress: space
+1923.1507 	EXP 	Created sequence: random, trialTypes=1, nReps=2, seed=None
+1923.1509 	EXP 	New trial (rep=0, index=0): None
+1923.1582 	EXP 	practice_instructions_text: autoDraw = False
+1923.1582 	EXP 	cross_polygon: autoDraw = True
+1923.6513 	EXP 	Created sequence: random, trialTypes=1, nReps=24, seed=None
+1923.6567 	EXP 	New trial (rep=0, index=0): None
+1946.3464 	EXP 	window1: mouseVisible = True
+1951.4124 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='#000000', colorSpace='hex', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023226CE5FC8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002322F29C408>, multiSample=False, name='window1', numSamples=2, pos=[448.0, 156.0], screen=0, size=array([1024,  768]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+1951.4125 	EXP 	window1: recordFrameIntervals = False
+1951.4951 	EXP 	window1: recordFrameIntervals = True
+1951.5819 	WARNING 	t of last frame was 12.20ms (=1/81)
+1951.6703 	EXP 	window1: recordFrameIntervals = False
+1951.6733 	EXP 	Created start_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='start_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Please wait for the experimenter. ', units='height', win=Window(...), wrapWidth=1)
+1951.6739 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1951.6870 	EXP 	Created instructions1_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions1_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7020 	EXP 	Created instructions2_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions2_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7125 	EXP 	Created practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica ', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7136 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+1951.7183 	EXP 	Created pratice_trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='pratice_trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+1951.7188 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1951.7367 	EXP 	Created Post_practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Post_practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7377 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+1951.7382 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1951.7448 	EXP 	Created trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+1951.7537 	EXP 	Created intrial_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='intrial_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7599 	EXP 	Created middle_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='middle_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7637 	EXP 	Created end_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='end_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7699 	EXP 	start_screen_text: autoDraw = True
+1953.2221 	DATA 	Keypress: s
+1953.2299 	EXP 	start_screen_text: autoDraw = False
+1953.2299 	EXP 	blank_screen_text: autoDraw = True
+1953.7303 	EXP 	blank_screen_text: autoDraw = False
+1953.7303 	EXP 	blank_screen_text: autoDraw = False
+1953.7303 	EXP 	instructions1_text: autoDraw = True
+1954.0311 	DATA 	Keypress: space
+1954.0391 	EXP 	instructions1_text: autoDraw = False
+1954.0391 	EXP 	instructions2_text: autoDraw = True
+1954.3562 	DATA 	Keypress: space
+1954.3645 	EXP 	instructions2_text: autoDraw = False
+1954.3645 	EXP 	practice_instructions_text: autoDraw = True
+1954.6568 	DATA 	Keypress: space
+1954.6573 	EXP 	Created sequence: random, trialTypes=1, nReps=2, seed=None
+1954.6575 	EXP 	New trial (rep=0, index=0): None
+1954.6647 	EXP 	practice_instructions_text: autoDraw = False
+1954.6647 	EXP 	cross_polygon: autoDraw = True
+1955.1581 	EXP 	Created sequence: random, trialTypes=1, nReps=24, seed=None
+1955.1636 	EXP 	New trial (rep=0, index=0): None
+1955.1898 	EXP 	cross_polygon: autoDraw = False
+1955.1898 	EXP 	cross_polygon: autoDraw = False
+1955.1898 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1955.1898 	EXP 	pratice_trial_text: autoDraw = True
+1957.6926 	EXP 	pratice_trial_text: autoDraw = False
+1957.7845 	EXP 	pratice_trial_text: autoDraw = False
+1957.7845 	EXP 	blank_screen_text: autoDraw = True
+1958.2779 	EXP 	New trial (rep=1, index=0): None
+1958.2930 	EXP 	blank_screen_text: autoDraw = False
+1958.2930 	EXP 	blank_screen_text: autoDraw = False
+1958.2930 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1958.2930 	EXP 	pratice_trial_text: autoDraw = True
+1958.9690 	DATA 	Keypress: left
+1958.9776 	EXP 	pratice_trial_text: autoDraw = False
+1958.9776 	EXP 	blank_screen_text: autoDraw = True
+1959.4702 	EXP 	New trial (rep=2, index=0): None
+1959.5028 	EXP 	blank_screen_text: autoDraw = False
+1959.5028 	EXP 	blank_screen_text: autoDraw = False
+1959.5028 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1959.5028 	EXP 	pratice_trial_text: autoDraw = True
+1959.8288 	DATA 	Keypress: right
+1959.8367 	EXP 	pratice_trial_text: autoDraw = False
+1959.8367 	EXP 	blank_screen_text: autoDraw = True
+1960.3298 	EXP 	New trial (rep=3, index=0): None
+1960.3533 	EXP 	blank_screen_text: autoDraw = False
+1960.3533 	EXP 	blank_screen_text: autoDraw = False
+1960.3533 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1960.3533 	EXP 	pratice_trial_text: autoDraw = True
+1960.6458 	DATA 	Keypress: left
+1960.6542 	EXP 	pratice_trial_text: autoDraw = False
+1960.6542 	EXP 	blank_screen_text: autoDraw = True
+1961.1469 	EXP 	New trial (rep=4, index=0): None
+1961.1708 	EXP 	blank_screen_text: autoDraw = False
+1961.1708 	EXP 	blank_screen_text: autoDraw = False
+1961.1708 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1961.1708 	EXP 	pratice_trial_text: autoDraw = True
+1961.3802 	DATA 	Keypress: right
+1961.3880 	EXP 	pratice_trial_text: autoDraw = False
+1961.3880 	EXP 	blank_screen_text: autoDraw = True
+1961.8810 	EXP 	New trial (rep=5, index=0): None
+1961.8967 	EXP 	blank_screen_text: autoDraw = False
+1961.8967 	EXP 	blank_screen_text: autoDraw = False
+1961.8967 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1961.8967 	EXP 	pratice_trial_text: autoDraw = True
+1962.1224 	DATA 	Keypress: left
+1962.1306 	EXP 	pratice_trial_text: autoDraw = False
+1962.1306 	EXP 	blank_screen_text: autoDraw = True
+1962.6233 	EXP 	New trial (rep=6, index=0): None
+1962.6392 	EXP 	blank_screen_text: autoDraw = False
+1962.6392 	EXP 	blank_screen_text: autoDraw = False
+1962.6392 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1962.6392 	EXP 	pratice_trial_text: autoDraw = True
+1962.6817 	DATA 	Keypress: right
+1963.1401 	DATA 	Keypress: right
+1963.1483 	EXP 	pratice_trial_text: autoDraw = False
+1963.1483 	EXP 	blank_screen_text: autoDraw = True
+1963.6415 	EXP 	New trial (rep=7, index=0): None
+1963.6649 	EXP 	blank_screen_text: autoDraw = False
+1963.6649 	EXP 	blank_screen_text: autoDraw = False
+1963.6649 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1963.6649 	EXP 	pratice_trial_text: autoDraw = True
+1963.8241 	DATA 	Keypress: left
+1963.8321 	EXP 	pratice_trial_text: autoDraw = False
+1963.8321 	EXP 	blank_screen_text: autoDraw = True
+1964.3258 	EXP 	New trial (rep=8, index=0): None
+1964.3407 	EXP 	blank_screen_text: autoDraw = False
+1964.3407 	EXP 	blank_screen_text: autoDraw = False
+1964.3407 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1964.3407 	EXP 	pratice_trial_text: autoDraw = True
+1964.4170 	DATA 	Keypress: left
+1964.9089 	DATA 	Keypress: left
+1964.9167 	EXP 	pratice_trial_text: autoDraw = False
+1964.9167 	EXP 	blank_screen_text: autoDraw = True
+1965.4098 	EXP 	New trial (rep=9, index=0): None
+1965.4335 	EXP 	blank_screen_text: autoDraw = False
+1965.4335 	EXP 	blank_screen_text: autoDraw = False
+1965.4335 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1965.4335 	EXP 	pratice_trial_text: autoDraw = True
+1965.5260 	DATA 	Keypress: right
+1965.9514 	DATA 	Keypress: right
+1965.9596 	EXP 	pratice_trial_text: autoDraw = False
+1965.9596 	EXP 	blank_screen_text: autoDraw = True
+1966.4526 	EXP 	New trial (rep=10, index=0): None
+1966.4680 	EXP 	blank_screen_text: autoDraw = False
+1966.4680 	EXP 	blank_screen_text: autoDraw = False
+1966.4680 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1966.4680 	EXP 	pratice_trial_text: autoDraw = True
+1966.6857 	DATA 	Keypress: left
+1966.6936 	EXP 	pratice_trial_text: autoDraw = False
+1966.6936 	EXP 	blank_screen_text: autoDraw = True
+1967.1864 	EXP 	New trial (rep=11, index=0): None
+1967.2018 	EXP 	blank_screen_text: autoDraw = False
+1967.2018 	EXP 	blank_screen_text: autoDraw = False
+1967.2018 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1967.2018 	EXP 	pratice_trial_text: autoDraw = True
+1967.2023 	DATA 	Keypress: right
+1967.6032 	DATA 	Keypress: right
+1967.6112 	EXP 	pratice_trial_text: autoDraw = False
+1967.6112 	EXP 	blank_screen_text: autoDraw = True
+1968.1041 	EXP 	New trial (rep=12, index=0): None
+1968.1281 	EXP 	blank_screen_text: autoDraw = False
+1968.1281 	EXP 	blank_screen_text: autoDraw = False
+1968.1281 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1968.1281 	EXP 	pratice_trial_text: autoDraw = True
+1968.3538 	DATA 	Keypress: left
+1968.3618 	EXP 	pratice_trial_text: autoDraw = False
+1968.3618 	EXP 	blank_screen_text: autoDraw = True
+1968.8549 	EXP 	New trial (rep=13, index=0): None
+1968.8787 	EXP 	blank_screen_text: autoDraw = False
+1968.8787 	EXP 	blank_screen_text: autoDraw = False
+1968.8787 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1968.8787 	EXP 	pratice_trial_text: autoDraw = True
+1969.1050 	DATA 	Keypress: right
+1969.1126 	EXP 	pratice_trial_text: autoDraw = False
+1969.1126 	EXP 	blank_screen_text: autoDraw = True
+1969.6057 	EXP 	New trial (rep=14, index=0): None
+1969.6211 	EXP 	blank_screen_text: autoDraw = False
+1969.6211 	EXP 	blank_screen_text: autoDraw = False
+1969.6211 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1969.6211 	EXP 	pratice_trial_text: autoDraw = True
+1969.8970 	DATA 	Keypress: left
+1969.9049 	EXP 	pratice_trial_text: autoDraw = False
+1969.9049 	EXP 	blank_screen_text: autoDraw = True
+1970.3980 	EXP 	New trial (rep=15, index=0): None
+1970.4135 	EXP 	blank_screen_text: autoDraw = False
+1970.4135 	EXP 	blank_screen_text: autoDraw = False
+1970.4135 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1970.4135 	EXP 	pratice_trial_text: autoDraw = True
+1970.6980 	DATA 	Keypress: right
+1970.7059 	EXP 	pratice_trial_text: autoDraw = False
+1970.7059 	EXP 	blank_screen_text: autoDraw = True
+1971.1991 	EXP 	New trial (rep=16, index=0): None
+1971.2144 	EXP 	blank_screen_text: autoDraw = False
+1971.2144 	EXP 	blank_screen_text: autoDraw = False
+1971.2144 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1971.2144 	EXP 	pratice_trial_text: autoDraw = True
+1971.4652 	DATA 	Keypress: left
+1971.4734 	EXP 	pratice_trial_text: autoDraw = False
+1971.4734 	EXP 	blank_screen_text: autoDraw = True
+1971.9660 	EXP 	New trial (rep=17, index=0): None
+1971.9816 	EXP 	blank_screen_text: autoDraw = False
+1951.4124 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='#000000', colorSpace='hex', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000023226CE5FC8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000002322F29C408>, multiSample=False, name='window1', numSamples=2, pos=[448.0, 156.0], screen=0, size=array([1024,  768]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+1951.4125 	EXP 	window1: recordFrameIntervals = False
+1951.4951 	EXP 	window1: recordFrameIntervals = True
+1951.5819 	WARNING 	t of last frame was 12.20ms (=1/81)
+1951.6703 	EXP 	window1: recordFrameIntervals = False
+1951.6733 	EXP 	Created start_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='start_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Please wait for the experimenter. ', units='height', win=Window(...), wrapWidth=1)
+1951.6739 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1951.6870 	EXP 	Created instructions1_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions1_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7020 	EXP 	Created instructions2_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions2_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7125 	EXP 	Created practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica ', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7136 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+1951.7183 	EXP 	Created pratice_trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='pratice_trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+1951.7188 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1951.7367 	EXP 	Created Post_practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Post_practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7377 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+1951.7382 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+1951.7448 	EXP 	Created trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+1951.7537 	EXP 	Created intrial_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='intrial_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7599 	EXP 	Created middle_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='middle_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7637 	EXP 	Created end_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='end_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+1951.7699 	EXP 	start_screen_text: autoDraw = True
+1953.2221 	DATA 	Keypress: s
+1953.2299 	EXP 	start_screen_text: autoDraw = False
+1953.2299 	EXP 	blank_screen_text: autoDraw = True
+1953.7303 	EXP 	blank_screen_text: autoDraw = False
+1953.7303 	EXP 	blank_screen_text: autoDraw = False
+1953.7303 	EXP 	instructions1_text: autoDraw = True
+1954.0311 	DATA 	Keypress: space
+1954.0391 	EXP 	instructions1_text: autoDraw = False
+1954.0391 	EXP 	instructions2_text: autoDraw = True
+1954.3562 	DATA 	Keypress: space
+1954.3645 	EXP 	instructions2_text: autoDraw = False
+1954.3645 	EXP 	practice_instructions_text: autoDraw = True
+1954.6568 	DATA 	Keypress: space
+1954.6573 	EXP 	Created sequence: random, trialTypes=1, nReps=2, seed=None
+1954.6575 	EXP 	New trial (rep=0, index=0): None
+1954.6647 	EXP 	practice_instructions_text: autoDraw = False
+1954.6647 	EXP 	cross_polygon: autoDraw = True
+1955.1581 	EXP 	Created sequence: random, trialTypes=1, nReps=24, seed=None
+1955.1636 	EXP 	New trial (rep=0, index=0): None
+1955.1898 	EXP 	cross_polygon: autoDraw = False
+1955.1898 	EXP 	cross_polygon: autoDraw = False
+1955.1898 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1955.1898 	EXP 	pratice_trial_text: autoDraw = True
+1957.6926 	EXP 	pratice_trial_text: autoDraw = False
+1957.7845 	EXP 	pratice_trial_text: autoDraw = False
+1957.7845 	EXP 	blank_screen_text: autoDraw = True
+1958.2779 	EXP 	New trial (rep=1, index=0): None
+1958.2930 	EXP 	blank_screen_text: autoDraw = False
+1958.2930 	EXP 	blank_screen_text: autoDraw = False
+1958.2930 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1958.2930 	EXP 	pratice_trial_text: autoDraw = True
+1958.9690 	DATA 	Keypress: left
+1958.9776 	EXP 	pratice_trial_text: autoDraw = False
+1958.9776 	EXP 	blank_screen_text: autoDraw = True
+1959.4702 	EXP 	New trial (rep=2, index=0): None
+1959.5028 	EXP 	blank_screen_text: autoDraw = False
+1959.5028 	EXP 	blank_screen_text: autoDraw = False
+1959.5028 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1959.5028 	EXP 	pratice_trial_text: autoDraw = True
+1959.8288 	DATA 	Keypress: right
+1959.8367 	EXP 	pratice_trial_text: autoDraw = False
+1959.8367 	EXP 	blank_screen_text: autoDraw = True
+1960.3298 	EXP 	New trial (rep=3, index=0): None
+1960.3533 	EXP 	blank_screen_text: autoDraw = False
+1960.3533 	EXP 	blank_screen_text: autoDraw = False
+1960.3533 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1960.3533 	EXP 	pratice_trial_text: autoDraw = True
+1960.6458 	DATA 	Keypress: left
+1960.6542 	EXP 	pratice_trial_text: autoDraw = False
+1960.6542 	EXP 	blank_screen_text: autoDraw = True
+1961.1469 	EXP 	New trial (rep=4, index=0): None
+1961.1708 	EXP 	blank_screen_text: autoDraw = False
+1961.1708 	EXP 	blank_screen_text: autoDraw = False
+1961.1708 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1961.1708 	EXP 	pratice_trial_text: autoDraw = True
+1961.3802 	DATA 	Keypress: right
+1961.3880 	EXP 	pratice_trial_text: autoDraw = False
+1961.3880 	EXP 	blank_screen_text: autoDraw = True
+1961.8810 	EXP 	New trial (rep=5, index=0): None
+1961.8967 	EXP 	blank_screen_text: autoDraw = False
+1961.8967 	EXP 	blank_screen_text: autoDraw = False
+1961.8967 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1961.8967 	EXP 	pratice_trial_text: autoDraw = True
+1962.1224 	DATA 	Keypress: left
+1962.1306 	EXP 	pratice_trial_text: autoDraw = False
+1962.1306 	EXP 	blank_screen_text: autoDraw = True
+1962.6233 	EXP 	New trial (rep=6, index=0): None
+1962.6392 	EXP 	blank_screen_text: autoDraw = False
+1962.6392 	EXP 	blank_screen_text: autoDraw = False
+1962.6392 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1962.6392 	EXP 	pratice_trial_text: autoDraw = True
+1962.6817 	DATA 	Keypress: right
+1963.1401 	DATA 	Keypress: right
+1963.1483 	EXP 	pratice_trial_text: autoDraw = False
+1963.1483 	EXP 	blank_screen_text: autoDraw = True
+1963.6415 	EXP 	New trial (rep=7, index=0): None
+1963.6649 	EXP 	blank_screen_text: autoDraw = False
+1963.6649 	EXP 	blank_screen_text: autoDraw = False
+1963.6649 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1963.6649 	EXP 	pratice_trial_text: autoDraw = True
+1963.8241 	DATA 	Keypress: left
+1963.8321 	EXP 	pratice_trial_text: autoDraw = False
+1963.8321 	EXP 	blank_screen_text: autoDraw = True
+1964.3258 	EXP 	New trial (rep=8, index=0): None
+1964.3407 	EXP 	blank_screen_text: autoDraw = False
+1964.3407 	EXP 	blank_screen_text: autoDraw = False
+1964.3407 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1964.3407 	EXP 	pratice_trial_text: autoDraw = True
+1964.4170 	DATA 	Keypress: left
+1964.9089 	DATA 	Keypress: left
+1964.9167 	EXP 	pratice_trial_text: autoDraw = False
+1964.9167 	EXP 	blank_screen_text: autoDraw = True
+1965.4098 	EXP 	New trial (rep=9, index=0): None
+1965.4335 	EXP 	blank_screen_text: autoDraw = False
+1965.4335 	EXP 	blank_screen_text: autoDraw = False
+1965.4335 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1965.4335 	EXP 	pratice_trial_text: autoDraw = True
+1965.5260 	DATA 	Keypress: right
+1965.9514 	DATA 	Keypress: right
+1965.9596 	EXP 	pratice_trial_text: autoDraw = False
+1965.9596 	EXP 	blank_screen_text: autoDraw = True
+1966.4526 	EXP 	New trial (rep=10, index=0): None
+1966.4680 	EXP 	blank_screen_text: autoDraw = False
+1966.4680 	EXP 	blank_screen_text: autoDraw = False
+1966.4680 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1966.4680 	EXP 	pratice_trial_text: autoDraw = True
+1966.6857 	DATA 	Keypress: left
+1966.6936 	EXP 	pratice_trial_text: autoDraw = False
+1966.6936 	EXP 	blank_screen_text: autoDraw = True
+1967.1864 	EXP 	New trial (rep=11, index=0): None
+1967.2018 	EXP 	blank_screen_text: autoDraw = False
+1967.2018 	EXP 	blank_screen_text: autoDraw = False
+1967.2018 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1967.2018 	EXP 	pratice_trial_text: autoDraw = True
+1967.2023 	DATA 	Keypress: right
+1967.6032 	DATA 	Keypress: right
+1967.6112 	EXP 	pratice_trial_text: autoDraw = False
+1967.6112 	EXP 	blank_screen_text: autoDraw = True
+1968.1041 	EXP 	New trial (rep=12, index=0): None
+1968.1281 	EXP 	blank_screen_text: autoDraw = False
+1968.1281 	EXP 	blank_screen_text: autoDraw = False
+1968.1281 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1968.1281 	EXP 	pratice_trial_text: autoDraw = True
+1968.3538 	DATA 	Keypress: left
+1968.3618 	EXP 	pratice_trial_text: autoDraw = False
+1968.3618 	EXP 	blank_screen_text: autoDraw = True
+1968.8549 	EXP 	New trial (rep=13, index=0): None
+1968.8787 	EXP 	blank_screen_text: autoDraw = False
+1968.8787 	EXP 	blank_screen_text: autoDraw = False
+1968.8787 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1968.8787 	EXP 	pratice_trial_text: autoDraw = True
+1969.1050 	DATA 	Keypress: right
+1969.1126 	EXP 	pratice_trial_text: autoDraw = False
+1969.1126 	EXP 	blank_screen_text: autoDraw = True
+1969.6057 	EXP 	New trial (rep=14, index=0): None
+1969.6211 	EXP 	blank_screen_text: autoDraw = False
+1969.6211 	EXP 	blank_screen_text: autoDraw = False
+1969.6211 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1969.6211 	EXP 	pratice_trial_text: autoDraw = True
+1969.8970 	DATA 	Keypress: left
+1969.9049 	EXP 	pratice_trial_text: autoDraw = False
+1969.9049 	EXP 	blank_screen_text: autoDraw = True
+1970.3980 	EXP 	New trial (rep=15, index=0): None
+1970.4135 	EXP 	blank_screen_text: autoDraw = False
+1970.4135 	EXP 	blank_screen_text: autoDraw = False
+1970.4135 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1970.4135 	EXP 	pratice_trial_text: autoDraw = True
+1970.6980 	DATA 	Keypress: right
+1970.7059 	EXP 	pratice_trial_text: autoDraw = False
+1970.7059 	EXP 	blank_screen_text: autoDraw = True
+1971.1991 	EXP 	New trial (rep=16, index=0): None
+1971.2144 	EXP 	blank_screen_text: autoDraw = False
+1971.2144 	EXP 	blank_screen_text: autoDraw = False
+1971.2144 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1971.2144 	EXP 	pratice_trial_text: autoDraw = True
+1971.4652 	DATA 	Keypress: left
+1971.4734 	EXP 	pratice_trial_text: autoDraw = False
+1971.4734 	EXP 	blank_screen_text: autoDraw = True
+1971.9660 	EXP 	New trial (rep=17, index=0): None
+1971.9816 	EXP 	blank_screen_text: autoDraw = False
+1971.9816 	EXP 	blank_screen_text: autoDraw = False
+1971.9816 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1971.9816 	EXP 	pratice_trial_text: autoDraw = True
+1972.2160 	DATA 	Keypress: right
+1972.2242 	EXP 	pratice_trial_text: autoDraw = False
+1972.2242 	EXP 	blank_screen_text: autoDraw = True
+1972.7169 	EXP 	New trial (rep=18, index=0): None
+1972.7326 	EXP 	blank_screen_text: autoDraw = False
+1972.7326 	EXP 	blank_screen_text: autoDraw = False
+1972.7326 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1972.7326 	EXP 	pratice_trial_text: autoDraw = True
+1972.9585 	DATA 	Keypress: left
+1972.9744 	EXP 	pratice_trial_text: autoDraw = False
+1972.9744 	EXP 	blank_screen_text: autoDraw = True
+1973.4679 	EXP 	New trial (rep=19, index=0): None
+1973.4833 	EXP 	blank_screen_text: autoDraw = False
+1973.4833 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1973.4833 	EXP 	pratice_trial_text: autoDraw = True
+1973.5758 	DATA 	Keypress: right
+1973.9762 	DATA 	Keypress: right
+1973.9842 	EXP 	pratice_trial_text: autoDraw = False
+1973.9842 	EXP 	blank_screen_text: autoDraw = True
+1974.4772 	EXP 	New trial (rep=20, index=0): None
+1974.4926 	EXP 	blank_screen_text: autoDraw = False
+1974.4926 	EXP 	blank_screen_text: autoDraw = False
+1974.4926 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1974.4926 	EXP 	pratice_trial_text: autoDraw = True
+1974.7187 	DATA 	Keypress: right
+1974.7266 	EXP 	pratice_trial_text: autoDraw = False
+1974.7266 	EXP 	blank_screen_text: autoDraw = True
+1975.2198 	EXP 	New trial (rep=21, index=0): None
+1975.2351 	EXP 	blank_screen_text: autoDraw = False
+1975.2351 	EXP 	blank_screen_text: autoDraw = False
+1975.2351 	EXP 	pratice_trial_text: text = 'Pa          Ba'
+1975.2351 	EXP 	pratice_trial_text: autoDraw = True
+1975.4358 	DATA 	Keypress: left
+1975.4439 	EXP 	pratice_trial_text: autoDraw = False
+1975.4439 	EXP 	blank_screen_text: autoDraw = True
+1975.9371 	EXP 	New trial (rep=22, index=0): None
+1975.9524 	EXP 	blank_screen_text: autoDraw = False
+1975.9524 	EXP 	blank_screen_text: autoDraw = False
+1975.9524 	EXP 	pratice_trial_text: text = 'Ka          Ga'
+1975.9524 	EXP 	pratice_trial_text: autoDraw = True
+1976.1118 	DATA 	Keypress: right
+1976.1198 	EXP 	pratice_trial_text: autoDraw = False
+1976.1198 	EXP 	blank_screen_text: autoDraw = True
+1976.6128 	EXP 	New trial (rep=23, index=0): None
+1976.6282 	EXP 	blank_screen_text: autoDraw = False
+1976.6282 	EXP 	blank_screen_text: autoDraw = False
+1976.6282 	EXP 	pratice_trial_text: text = 'Ta          Da'
+1976.6282 	EXP 	pratice_trial_text: autoDraw = True
+1976.7872 	DATA 	Keypress: left
+1976.7954 	EXP 	pratice_trial_text: autoDraw = False
+1976.7954 	EXP 	blank_screen_text: autoDraw = True
+1977.3123 	EXP 	blank_screen_text: autoDraw = False
+1977.3123 	EXP 	blank_screen_text: autoDraw = False
+1977.3123 	EXP 	Post_practice_instructions_text: autoDraw = True
+1977.4299 	DATA 	Keypress: right
+1988.6159 	DATA 	Keypress: down
+1988.6172 	EXP 	Created sequence: random, trialTypes=1, nReps=2, seed=None
+1988.6174 	EXP 	New trial (rep=0, index=0): None
+1988.6176 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+1994.3096 	EXP 	window1: mouseVisible = True
