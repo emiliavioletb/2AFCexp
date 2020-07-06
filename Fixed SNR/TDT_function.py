@@ -40,7 +40,7 @@ class Stimuli_Emilia():
         self.type = conditions[condition]['type']
         self.frequency = conditions[condition]['frequency']
         self.phase = conditions[condition]['phase']
-        self.Fs = 22050
+        self.Fs = 39062.5
         self.snr = snr
         
         path_to_syllables = os.path.join(r'//icnas2.cc.ic.ac.uk/phg17/GitHub/2AFCexp/Fixed SNR/','Syllables')
