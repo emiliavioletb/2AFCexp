@@ -1240,16 +1240,15 @@ for thisOuter_loop in outer_loop:
     # Load stimulation & sound stimuli arrays. 
     frequency_two_array = np.load('array_two.npy')
     frequency_six_array = np.load('array_six.npy')
-    #random_stim_array = np.load('random_stim.npy')
-    #no_stim_array = np.load('no_stim.npy')
+    random_stim_array = np.load('random_stim.npy')
+    no_stim_array = np.load('no_stim.npy')
     two_array = np.load('twohzstimuli.npy')
     six_array = np.load('sixhzstimuli.npy')
     
     # Load rt arrays
-    rt2 = pd.read_csv('rt2.csv')
-    rt2 = rt2['reaction time']
-    rt6 = pd.read_csv('rt6.csv')
-    rt6 = rt6['reaction time']
+    rt2 = pd.read_csv('rt2.csv')['reaction time']
+    rt6 = pd.read_csv('rt6.csv')['reaction time']
+
     
     # Load stim trig arrays.
     six_trig = np.load('sixhz_trig.npy')
@@ -1500,8 +1499,8 @@ for thisOuter_loop in outer_loop:
             if tactile_freq == 'Random': 
                 n = 20
                 R_index = np.random.choice(n)
-                #rand = random_stim_array[R_index] 
-                rand =  np.zeros(len(six_array))
+                rand = random_stim_array[R_index] 
+                #rand =  np.zeros(len(six_array))
                 for i in range(0, Ltwo):
                     frequency_array = rand[i:i+Ltwo]
 
