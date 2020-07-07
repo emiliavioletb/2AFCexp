@@ -104,7 +104,7 @@ rt6 = pd.read_csv('rt6.csv')['reaction time']
 #%% Define class to handle stimuli
 
 class Stimuli_Emilia():
-    def __init__(self, file, condition,snr, circuit):
+    def __init__(self, condition,snr, circuit):
         start = time.time()
         
         #Handle General Info
@@ -139,11 +139,13 @@ class Stimuli_Emilia():
         else:
                 self.syllable_index = np.random.choice(self.syllables)
              
-        if condition == 9:
+        if condition == 9 or condition == 8:
             self.syllable = np.load(os.path.join(path_to_syllables,'syllables_2Hz_39062_shifted_norm.npy'))[self.syllable_index]
+        
         else:
             self.syllable = np.load(os.path.join(path_to_syllables,'syllables_' + str(self.type) + '_39062_shifted_norm.npy'))[self.syllable_index]
         
+        self.syllable = self.syllable/max(self.syllable)*6
         
         #Add Delay
         self.delay_length = random.randint(22049, 33074) 
@@ -167,7 +169,8 @@ class Stimuli_Emilia():
         #Level for compatibility with the setup
         self.syllable /= 500
         self.syllable_in_noise /= 500
-        self.tactile /= max(self.tactile)
+        if condition != 8:
+            self.tactile /= max(self.tactile)
         
         #Generate Trigger
         Trigger = np.ones(self.length) * (condition + 1) # the trigger dictionary is shifted by one
@@ -186,5 +189,78 @@ class Stimuli_Emilia():
         self.reaction_time = (conditions[condition]['reaction time'] + self.delay_length)/self.Fs 
 
         print('stimuli generated in ', str(time.time()-start), ' seconds')
+        self.timescale = np.arange(self.length) / self.Fs
         
+    def check(self):
+        if (len(self.syllable_in_noise) == len(self.tactile) == len(self.trigger) == self.length) :
+            print('All Stimuli have the same length')
+        else:
+            raise Exception('All Stimuli do not have the same length')
+        if (self.Fs == self.circuit.fs):
+            print('Consistent sampling frequency: ', str(self.Fs))
+        else:
+            raise Exception('Inconsistent Sampling Frequency')
+        
+    def plot(self, *stim, new_window = True):
+        start = time.time()
+        if new_window:
+            plt.figure()
+        if len(stim) == 0:
+            plt.subplot(311)
+            plt.plot(self.timescale,self.syllable)
+            plt.subplot(312)
+            plt.plot(self.timescale,self.tactile)
+            plt.subplot(313)
+            plt.plot(self.timescale,self.trigger)
+        else:
+            for i in stim:
+                if i == 'syllable':
+                    plt.plot(self.timescale,self.audio)
+                elif i == 'tactile':
+                    plt.plot(self.timescale,self.tactile/500)
+                elif i == 'trigger':
+                    plt.plot(self.timescale,self.trigger/500)
+                else:
+                    raise Exception('Invalid Condition')
+        
+        
+        print('Graph generated in ', str(round(time.time() - start,2)), ' seconds')
+        
+    def load_into_buffer(self):
+        start = time.time()
+        
+        self.check()
+        
+        audio_in_buffer = self.circuit.get_buffer('audio_in', 'w')
+        tactile_in_buffer = self.circuit.get_buffer('tactile_in', 'w')
+        stimtrack_in_buffer = self.circuit.get_buffer('stimtrack_in', 'w')
+        trigger_in_buffer = self.circuit.get_buffer('trigger_in', 'w')
+
+
+        self.circuit.set_tag('size_audio', self.length)
+        self.circuit.set_tag('size_tactile', self.length)
+        self.circuit.set_tag('size_stimtrack', self.length)
+        self.circuit.set_tag('size_trigger', self.length)
+        audio_in_buffer.write(self.syllable_in_noise)
+        tactile_in_buffer.write(self.tactile)
+        stimtrack_in_buffer.write(self.syllable)
+        trigger_in_buffer.write(self.trigger)
+    
+
+        load=time.time()
+        print('Stimuli loaded in: ',str(load-start),' seconds')
+        
+    def start(self):
+        self.start_time = time.time()
+        self.circuit.start()
+    
+    def stop(self):
+        
+        self.circuit.stop()
+        self.end_time = time.time()
+        print('Stimuli was sent for: ',str(self.end_time - self.start_time),' seconds')
+        self.circuit.set_tag('audio_in_i', 0)
+        self.circuit.set_tag('tactile_in_i', 0)
+        self.circuit.set_tag('stimtrack_in_i', 0)
+        self.circuit.set_tag('trigger_in_i', 0)
        

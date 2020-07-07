@@ -1,0 +1,772 @@
+13461.9114 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, args=UNKNOWN, autoLog=True, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color='#000000', colorSpace='hex', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001AB96AD2CC8>, gamma=None, gammaErrorPolicy='raise', kwargs=UNKNOWN, lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001ABA2B79E88>, multiSample=False, name='window1', numSamples=2, pos=[-40.0, -210.0], screen=0, size=array([2000, 1500]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13461.9114 	EXP 	window1: recordFrameIntervals = False
+13462.0032 	EXP 	window1: recordFrameIntervals = True
+13462.0309 	WARNING 	t of last frame was 14.68ms (=1/68)
+13462.1117 	EXP 	window1: recordFrameIntervals = False
+13462.1158 	EXP 	Created start_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='start_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='Please wait for the experimenter. ', units='height', win=Window(...), wrapWidth=1)
+13462.1163 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+13462.1337 	EXP 	Created instructions1_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions1_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+13462.1538 	EXP 	Created instructions2_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='instructions2_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+13462.1673 	EXP 	Created practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica ', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+13462.1684 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+13462.1796 	EXP 	Created pratice_trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='pratice_trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13462.1802 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+13462.2040 	EXP 	Created Post_practice_instructions_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='Post_practice_instructions_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+13462.2050 	EXP 	Created cross_polygon = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, contrast=1.0, depth=0.0, fillColor='#FFFFFF', fillColorSpace='hex', interpolate=True, lineColor='#FFFFFF', lineColorSpace='hex', lineWidth=0.3, name='cross_polygon', opacity=1.0, ori=array(0.), pos=array([0., 0.]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+13462.2057 	EXP 	Created blank_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='blank_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='', units='height', win=Window(...), wrapWidth=1)
+13462.2084 	EXP 	Created trial_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='trial_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text='default text', units='height', win=Window(...), wrapWidth=1)
+13462.2085 	EXP 	Sound trial_sound set volume 1.000
+13462.2202 	EXP 	Created intrial_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='intrial_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+13462.2307 	EXP 	Created middle_break_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='middle_break_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+13462.2355 	EXP 	Created end_screen_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color='white', colorSpace='named', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Helvetica', fontFiles=[], height=0.04, italic=False, languageStyle='LTR', name='end_screen_text', opacity=1.0, ori=0, pos=array([0., 0.]), rgb=array([255., 255., 255.]), text=str(...), units='height', win=Window(...), wrapWidth=1)
+13462.2474 	EXP 	start_screen_text: autoDraw = True
+13463.6456 	DATA 	Keypress: s
+13463.6544 	EXP 	start_screen_text: autoDraw = False
+13463.6544 	EXP 	blank_screen_text: autoDraw = True
+13464.1657 	EXP 	blank_screen_text: autoDraw = False
+13464.1657 	EXP 	instructions1_text: autoDraw = True
+13464.6955 	DATA 	Keypress: space
+13464.7159 	EXP 	instructions1_text: autoDraw = False
+13464.7159 	EXP 	instructions2_text: autoDraw = True
+13465.3436 	DATA 	Keypress: space
+13465.3441 	EXP 	Created sequence: random, trialTypes=1, nReps=2, seed=None
+13465.3443 	EXP 	New trial (rep=0, index=0): None
+13465.3445 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+13465.3446 	EXP 	New trial (rep=0, index=0): None
+13465.3553 	EXP 	instructions2_text: autoDraw = False
+13465.3553 	EXP 	cross_polygon: autoDraw = True
+13465.8526 	EXP 	Created sequence: random, trialTypes=1, nReps=50, seed=None
+13465.8530 	EXP 	New trial (rep=0, index=0): None
+13465.8588 	EXP 	cross_polygon: autoDraw = False
+13465.8588 	EXP 	blank_screen_text: autoDraw = True
+13468.0616 	EXP 	blank_screen_text: autoDraw = False
+13468.0616 	EXP 	trial_text: text = 'Ta          Da'
+13468.0616 	EXP 	trial_text: autoDraw = True
+13472.8257 	DATA 	Keypress: left
+13472.8318 	EXP 	New trial (rep=1, index=0): None
+13472.8414 	EXP 	trial_text: autoDraw = False
+13472.8414 	EXP 	blank_screen_text: autoDraw = True
+13474.9352 	EXP 	blank_screen_text: autoDraw = False
+13474.9352 	EXP 	trial_text: text = 'Pa          Ba'
+13474.9352 	EXP 	trial_text: autoDraw = True
+13479.2073 	DATA 	Keypress: left
+13479.2122 	EXP 	New trial (rep=2, index=0): None
+13479.2241 	EXP 	trial_text: autoDraw = False
+13479.2241 	EXP 	blank_screen_text: autoDraw = True
+13480.6161 	EXP 	blank_screen_text: autoDraw = False
+13480.6161 	EXP 	trial_text: text = 'Ka          Ga'
+13480.6161 	EXP 	trial_text: autoDraw = True
+13483.8502 	DATA 	Keypress: left
+13483.8549 	EXP 	New trial (rep=3, index=0): None
+13483.8690 	EXP 	trial_text: autoDraw = False
+13483.8690 	EXP 	blank_screen_text: autoDraw = True
+13485.2289 	EXP 	blank_screen_text: autoDraw = False
+13485.2289 	EXP 	trial_text: text = 'Ka          Ga'
+13485.2289 	EXP 	trial_text: autoDraw = True
+13489.1914 	DATA 	Keypress: right
+13489.2016 	EXP 	New trial (rep=4, index=0): None
+13489.2104 	EXP 	trial_text: autoDraw = False
+13489.2104 	EXP 	blank_screen_text: autoDraw = True
+13491.3768 	EXP 	blank_screen_text: autoDraw = False
+13491.3768 	EXP 	trial_text: text = 'Pa          Ba'
+13491.3768 	EXP 	trial_text: autoDraw = True
+13496.0291 	DATA 	Keypress: left
+13496.0336 	EXP 	New trial (rep=5, index=0): None
+13496.0370 	EXP 	trial_text: autoDraw = False
+13496.0370 	EXP 	blank_screen_text: autoDraw = True
+13497.4334 	EXP 	blank_screen_text: autoDraw = False
+13497.4334 	EXP 	trial_text: text = 'Ka          Ga'
+13497.4334 	EXP 	trial_text: autoDraw = True
+13499.9690 	DATA 	Keypress: left
+13499.9739 	EXP 	New trial (rep=6, index=0): None
+13499.9854 	EXP 	trial_text: autoDraw = False
+13499.9854 	EXP 	blank_screen_text: autoDraw = True
+13502.0629 	EXP 	blank_screen_text: autoDraw = False
+13502.0629 	EXP 	trial_text: text = 'Ta          Da'
+13502.0629 	EXP 	trial_text: autoDraw = True
+13507.4186 	DATA 	Keypress: left
+13507.4235 	EXP 	New trial (rep=7, index=0): None
+13507.4351 	EXP 	trial_text: autoDraw = False
+13507.4351 	EXP 	blank_screen_text: autoDraw = True
+13508.8530 	EXP 	blank_screen_text: autoDraw = False
+13508.8530 	EXP 	trial_text: text = 'Pa          Ba'
+13508.8530 	EXP 	trial_text: autoDraw = True
+13513.2825 	DATA 	Keypress: left
+13513.2875 	EXP 	New trial (rep=8, index=0): None
+13513.2987 	EXP 	trial_text: autoDraw = False
+13513.2987 	EXP 	blank_screen_text: autoDraw = True
+13514.6755 	EXP 	blank_screen_text: autoDraw = False
+13514.6755 	EXP 	trial_text: text = 'Ka          Ga'
+13514.6755 	EXP 	trial_text: autoDraw = True
+13518.8689 	DATA 	Keypress: left
+13518.8736 	EXP 	New trial (rep=9, index=0): None
+13518.8885 	EXP 	trial_text: autoDraw = False
+13518.8885 	EXP 	blank_screen_text: autoDraw = True
+13521.0319 	EXP 	blank_screen_text: autoDraw = False
+13521.0319 	EXP 	trial_text: text = 'Pa          Ba'
+13521.0319 	EXP 	trial_text: autoDraw = True
+13526.2097 	DATA 	Keypress: left
+13526.2145 	EXP 	New trial (rep=10, index=0): None
+13526.2286 	EXP 	trial_text: autoDraw = False
+13526.2286 	EXP 	blank_screen_text: autoDraw = True
+13528.3390 	EXP 	blank_screen_text: autoDraw = False
+13528.3390 	EXP 	trial_text: text = 'Ka          Ga'
+13528.3390 	EXP 	trial_text: autoDraw = True
+13534.5628 	DATA 	Keypress: right
+13534.5675 	EXP 	New trial (rep=11, index=0): None
+13534.5794 	EXP 	trial_text: autoDraw = False
+13534.5794 	EXP 	blank_screen_text: autoDraw = True
+13536.6643 	EXP 	blank_screen_text: autoDraw = False
+13536.6643 	EXP 	trial_text: text = 'Ta          Da'
+13536.6643 	EXP 	trial_text: autoDraw = True
+13541.7001 	DATA 	Keypress: left
+13541.7049 	EXP 	New trial (rep=12, index=0): None
+13541.7192 	EXP 	trial_text: autoDraw = False
+13541.7192 	EXP 	blank_screen_text: autoDraw = True
+13543.7968 	EXP 	blank_screen_text: autoDraw = False
+13543.7968 	EXP 	trial_text: text = 'Pa          Ba'
+13543.7968 	EXP 	trial_text: autoDraw = True
+13548.5994 	DATA 	Keypress: left
+13548.6177 	EXP 	New trial (rep=13, index=0): None
+13548.6262 	EXP 	trial_text: autoDraw = False
+13548.6262 	EXP 	blank_screen_text: autoDraw = True
+13550.7198 	EXP 	blank_screen_text: autoDraw = False
+13550.7198 	EXP 	trial_text: text = 'Pa          Ba'
+13550.7198 	EXP 	trial_text: autoDraw = True
+13556.7151 	DATA 	Keypress: left
+13556.7199 	EXP 	New trial (rep=14, index=0): None
+13556.7349 	EXP 	trial_text: autoDraw = False
+13556.7349 	EXP 	blank_screen_text: autoDraw = True
+13558.9035 	EXP 	blank_screen_text: autoDraw = False
+13558.9035 	EXP 	trial_text: text = 'Pa          Ba'
+13558.9035 	EXP 	trial_text: autoDraw = True
+13563.7305 	DATA 	Keypress: left
+13563.7355 	EXP 	New trial (rep=15, index=0): None
+13563.7460 	EXP 	trial_text: autoDraw = False
+13563.7460 	EXP 	blank_screen_text: autoDraw = True
+13565.1177 	EXP 	blank_screen_text: autoDraw = False
+13565.1177 	EXP 	trial_text: text = 'Ka          Ga'
+13565.1177 	EXP 	trial_text: autoDraw = True
+13568.7354 	DATA 	Keypress: right
+13568.7401 	EXP 	New trial (rep=16, index=0): None
+13568.7436 	EXP 	trial_text: autoDraw = False
+13568.7436 	EXP 	blank_screen_text: autoDraw = True
+13570.8234 	EXP 	blank_screen_text: autoDraw = False
+13570.8234 	EXP 	blank_screen_text: autoDraw = False
+13570.8234 	EXP 	trial_text: text = 'Pa          Ba'
+13570.8234 	EXP 	trial_text: autoDraw = True
+13575.1720 	DATA 	Keypress: left
+13575.1857 	EXP 	New trial (rep=17, index=0): None
+13575.1944 	EXP 	trial_text: autoDraw = False
+13575.1944 	EXP 	blank_screen_text: autoDraw = True
+13577.2802 	EXP 	blank_screen_text: autoDraw = False
+13577.2802 	EXP 	trial_text: text = 'Pa          Ba'
+13577.2802 	EXP 	trial_text: autoDraw = True
+13581.9272 	DATA 	Keypress: left
+13581.9321 	EXP 	New trial (rep=18, index=0): None
+13581.9436 	EXP 	trial_text: autoDraw = False
+13581.9436 	EXP 	blank_screen_text: autoDraw = True
+13584.0368 	EXP 	blank_screen_text: autoDraw = False
+13584.0368 	EXP 	trial_text: text = 'Ta          Da'
+13584.0368 	EXP 	trial_text: autoDraw = True
+13589.9435 	DATA 	Keypress: right
+13589.9483 	EXP 	New trial (rep=19, index=0): None
+13589.9592 	EXP 	trial_text: autoDraw = False
+13589.9592 	EXP 	blank_screen_text: autoDraw = True
+13592.0533 	EXP 	blank_screen_text: autoDraw = False
+13592.0533 	EXP 	trial_text: text = 'Pa          Ba'
+13592.0533 	EXP 	trial_text: autoDraw = True
+13600.8598 	DATA 	Keypress: left
+13600.8646 	EXP 	New trial (rep=20, index=0): None
+13600.8785 	EXP 	trial_text: autoDraw = False
+13600.8785 	EXP 	blank_screen_text: autoDraw = True
+13603.0811 	EXP 	blank_screen_text: autoDraw = False
+13603.0811 	EXP 	trial_text: text = 'Ta          Da'
+13603.0811 	EXP 	trial_text: autoDraw = True
+13608.8205 	DATA 	Keypress: left
+13608.8255 	EXP 	New trial (rep=21, index=0): None
+13608.8372 	EXP 	trial_text: autoDraw = False
+13608.8372 	EXP 	blank_screen_text: autoDraw = True
+13610.2551 	EXP 	blank_screen_text: autoDraw = False
+13610.2551 	EXP 	trial_text: text = 'Ta          Da'
+13610.2551 	EXP 	trial_text: autoDraw = True
+13612.7799 	DATA 	Keypress: left
+13612.7847 	EXP 	New trial (rep=22, index=0): None
+13612.7988 	EXP 	trial_text: autoDraw = False
+13612.7988 	EXP 	blank_screen_text: autoDraw = True
+13614.2087 	EXP 	blank_screen_text: autoDraw = False
+13614.2087 	EXP 	trial_text: text = 'Ta          Da'
+13614.2087 	EXP 	trial_text: autoDraw = True
+13617.3178 	DATA 	Keypress: right
+13617.3225 	EXP 	New trial (rep=23, index=0): None
+13617.3380 	EXP 	trial_text: autoDraw = False
+13617.3380 	EXP 	blank_screen_text: autoDraw = True
+13619.4726 	EXP 	blank_screen_text: autoDraw = False
+13619.4726 	EXP 	trial_text: text = 'Ka          Ga'
+13619.4726 	EXP 	trial_text: autoDraw = True
+13627.9225 	DATA 	Keypress: left
+13627.9278 	EXP 	New trial (rep=24, index=0): None
+13627.9392 	EXP 	trial_text: autoDraw = False
+13627.9392 	EXP 	blank_screen_text: autoDraw = True
+13630.0415 	EXP 	blank_screen_text: autoDraw = False
+13630.0415 	EXP 	trial_text: text = 'Ka          Ga'
+13630.0415 	EXP 	trial_text: autoDraw = True
+13638.5061 	DATA 	Keypress: right
+13638.5108 	EXP 	New trial (rep=25, index=0): None
+13638.5216 	EXP 	trial_text: autoDraw = False
+13638.5216 	EXP 	blank_screen_text: autoDraw = True
+13640.6773 	EXP 	blank_screen_text: autoDraw = False
+13640.6773 	EXP 	trial_text: text = 'Ta          Da'
+13640.6773 	EXP 	trial_text: autoDraw = True
+13645.4996 	DATA 	Keypress: left
+13645.5049 	EXP 	New trial (rep=26, index=0): None
+13645.5152 	EXP 	trial_text: autoDraw = False
+13645.5152 	EXP 	blank_screen_text: autoDraw = True
+13647.6260 	EXP 	blank_screen_text: autoDraw = False
+13647.6260 	EXP 	trial_text: text = 'Ka          Ga'
+13647.6260 	EXP 	trial_text: autoDraw = True
+13654.1653 	DATA 	Keypress: right
+13654.1703 	EXP 	New trial (rep=27, index=0): None
+13654.1823 	EXP 	trial_text: autoDraw = False
+13654.1823 	EXP 	blank_screen_text: autoDraw = True
+13655.5588 	EXP 	blank_screen_text: autoDraw = False
+13655.5588 	EXP 	trial_text: text = 'Ka          Ga'
+13655.5588 	EXP 	trial_text: autoDraw = True
+13658.9881 	DATA 	Keypress: right
+13658.9931 	EXP 	New trial (rep=28, index=0): None
+13659.0005 	EXP 	trial_text: autoDraw = False
+13659.0005 	EXP 	blank_screen_text: autoDraw = True
+13661.0977 	EXP 	blank_screen_text: autoDraw = False
+13661.0977 	EXP 	trial_text: text = 'Pa          Ba'
+13661.0977 	EXP 	trial_text: autoDraw = True
+13665.5046 	DATA 	Keypress: left
+13665.5099 	EXP 	New trial (rep=29, index=0): None
+13665.5191 	EXP 	trial_text: autoDraw = False
+13665.5191 	EXP 	blank_screen_text: autoDraw = True
+13667.6544 	EXP 	blank_screen_text: autoDraw = False
+13667.6544 	EXP 	trial_text: text = 'Pa          Ba'
+13667.6544 	EXP 	trial_text: autoDraw = True
+13673.1873 	DATA 	Keypress: right
+13673.1932 	EXP 	New trial (rep=30, index=0): None
+13673.1980 	EXP 	trial_text: autoDraw = False
+13673.1980 	EXP 	blank_screen_text: autoDraw = True
+13675.3036 	EXP 	blank_screen_text: autoDraw = False
+13675.3036 	EXP 	trial_text: text = 'Ta          Da'
+13675.3036 	EXP 	trial_text: autoDraw = True
+13679.8107 	DATA 	Keypress: left
+13679.8158 	EXP 	New trial (rep=31, index=0): None
+13679.8252 	EXP 	trial_text: autoDraw = False
+13679.8252 	EXP 	blank_screen_text: autoDraw = True
+13681.9359 	EXP 	blank_screen_text: autoDraw = False
+13681.9359 	EXP 	trial_text: text = 'Ka          Ga'
+13681.9359 	EXP 	trial_text: autoDraw = True
+13686.5379 	DATA 	Keypress: right
+13686.5427 	EXP 	New trial (rep=32, index=0): None
+13686.5565 	EXP 	trial_text: autoDraw = False
+13686.5565 	EXP 	blank_screen_text: autoDraw = True
+13688.6093 	EXP 	blank_screen_text: autoDraw = False
+13688.6093 	EXP 	trial_text: text = 'Ka          Ga'
+13688.6093 	EXP 	trial_text: autoDraw = True
+13693.1805 	DATA 	Keypress: left
+13693.1861 	EXP 	New trial (rep=33, index=0): None
+13693.1966 	EXP 	trial_text: autoDraw = False
+13693.1966 	EXP 	blank_screen_text: autoDraw = True
+13694.5983 	EXP 	blank_screen_text: autoDraw = False
+13694.5983 	EXP 	trial_text: text = 'Pa          Ba'
+13694.5983 	EXP 	trial_text: autoDraw = True
+13696.7757 	DATA 	Keypress: left
+13696.7807 	EXP 	New trial (rep=34, index=0): None
+13696.7920 	EXP 	trial_text: autoDraw = False
+13696.7920 	EXP 	blank_screen_text: autoDraw = True
+13698.1517 	EXP 	blank_screen_text: autoDraw = False
+13698.1517 	EXP 	trial_text: text = 'Ka          Ga'
+13698.1517 	EXP 	trial_text: autoDraw = True
+13701.2276 	DATA 	Keypress: right
+13701.2326 	EXP 	New trial (rep=35, index=0): None
+13701.2464 	EXP 	trial_text: autoDraw = False
+13701.2464 	EXP 	blank_screen_text: autoDraw = True
+13703.3569 	EXP 	blank_screen_text: autoDraw = False
+13703.3569 	EXP 	trial_text: text = 'Ta          Da'
+13703.3569 	EXP 	trial_text: autoDraw = True
+13708.7600 	DATA 	Keypress: left
+13708.7647 	EXP 	New trial (rep=36, index=0): None
+13708.7790 	EXP 	trial_text: autoDraw = False
+13708.7790 	EXP 	blank_screen_text: autoDraw = True
+13710.1973 	EXP 	blank_screen_text: autoDraw = False
+13710.1973 	EXP 	trial_text: text = 'Ta          Da'
+13710.1973 	EXP 	trial_text: autoDraw = True
+13713.2010 	DATA 	Keypress: left
+13713.2070 	EXP 	New trial (rep=37, index=0): None
+13713.2135 	EXP 	trial_text: autoDraw = False
+13713.2135 	EXP 	blank_screen_text: autoDraw = True
+13715.2944 	EXP 	blank_screen_text: autoDraw = False
+13715.2944 	EXP 	trial_text: text = 'Pa          Ba'
+13715.2944 	EXP 	trial_text: autoDraw = True
+13719.6543 	DATA 	Keypress: left
+13719.6592 	EXP 	New trial (rep=38, index=0): None
+13719.6732 	EXP 	trial_text: autoDraw = False
+13719.6732 	EXP 	blank_screen_text: autoDraw = True
+13721.8924 	EXP 	blank_screen_text: autoDraw = False
+13721.8924 	EXP 	trial_text: text = 'Ka          Ga'
+13721.8924 	EXP 	trial_text: autoDraw = True
+13728.2878 	DATA 	Keypress: left
+13728.2950 	EXP 	New trial (rep=39, index=0): None
+13728.3070 	EXP 	trial_text: autoDraw = False
+13728.3070 	EXP 	blank_screen_text: autoDraw = True
+13729.7339 	EXP 	blank_screen_text: autoDraw = False
+13729.7339 	EXP 	trial_text: text = 'Ka          Ga'
+13729.7339 	EXP 	trial_text: autoDraw = True
+13734.4191 	DATA 	Keypress: left
+13734.4237 	EXP 	New trial (rep=40, index=0): None
+13734.4381 	EXP 	trial_text: autoDraw = False
+13734.4381 	EXP 	blank_screen_text: autoDraw = True
+13736.5321 	EXP 	blank_screen_text: autoDraw = False
+13736.5321 	EXP 	trial_text: text = 'Ka          Ga'
+13736.5321 	EXP 	trial_text: autoDraw = True
+13741.4790 	DATA 	Keypress: right
+13741.4838 	EXP 	New trial (rep=41, index=0): None
+13741.4951 	EXP 	trial_text: autoDraw = False
+13741.4951 	EXP 	blank_screen_text: autoDraw = True
+13743.5890 	EXP 	blank_screen_text: autoDraw = False
+13743.5890 	EXP 	trial_text: text = 'Ka          Ga'
+13743.5890 	EXP 	trial_text: autoDraw = True
+13749.2168 	DATA 	Keypress: left
+13749.2216 	EXP 	New trial (rep=42, index=0): None
+13749.2255 	EXP 	trial_text: autoDraw = False
+13749.2255 	EXP 	blank_screen_text: autoDraw = True
+13751.3221 	EXP 	blank_screen_text: autoDraw = False
+13751.3221 	EXP 	blank_screen_text: autoDraw = False
+13751.3221 	EXP 	trial_text: text = 'Ka          Ga'
+13751.3221 	EXP 	trial_text: autoDraw = True
+13756.3585 	DATA 	Keypress: left
+13756.3633 	EXP 	New trial (rep=43, index=0): None
+13756.3772 	EXP 	trial_text: autoDraw = False
+13756.3772 	EXP 	blank_screen_text: autoDraw = True
+13758.4376 	EXP 	blank_screen_text: autoDraw = False
+13758.4376 	EXP 	trial_text: text = 'Ta          Da'
+13758.4376 	EXP 	trial_text: autoDraw = True
+13762.8558 	DATA 	Keypress: left
+13762.8605 	EXP 	New trial (rep=44, index=0): None
+13762.8639 	EXP 	trial_text: autoDraw = False
+13762.8639 	EXP 	blank_screen_text: autoDraw = True
+13764.2434 	EXP 	blank_screen_text: autoDraw = False
+13764.2434 	EXP 	blank_screen_text: autoDraw = False
+13764.2434 	EXP 	trial_text: text = 'Ka          Ga'
+13764.2434 	EXP 	trial_text: autoDraw = True
+13767.9757 	DATA 	Keypress: right
+13767.9949 	EXP 	New trial (rep=45, index=0): None
+13768.0060 	EXP 	trial_text: autoDraw = False
+13768.0060 	EXP 	blank_screen_text: autoDraw = True
+13770.1491 	EXP 	blank_screen_text: autoDraw = False
+13770.1491 	EXP 	trial_text: text = 'Pa          Ba'
+13770.1491 	EXP 	trial_text: autoDraw = True
+13774.4927 	DATA 	Keypress: left
+13774.4977 	EXP 	New trial (rep=46, index=0): None
+13774.5119 	EXP 	trial_text: autoDraw = False
+13774.5119 	EXP 	blank_screen_text: autoDraw = True
+13776.6145 	EXP 	blank_screen_text: autoDraw = False
+13776.6145 	EXP 	trial_text: text = 'Ta          Da'
+13776.6145 	EXP 	trial_text: autoDraw = True
+13781.4831 	DATA 	Keypress: left
+13781.4879 	EXP 	New trial (rep=47, index=0): None
+13781.5022 	EXP 	trial_text: autoDraw = False
+13781.5022 	EXP 	blank_screen_text: autoDraw = True
+13783.7045 	EXP 	blank_screen_text: autoDraw = False
+13783.7045 	EXP 	trial_text: text = 'Pa          Ba'
+13783.7045 	EXP 	trial_text: autoDraw = True
+13788.2065 	DATA 	Keypress: left
+13788.2115 	EXP 	New trial (rep=48, index=0): None
+13788.2255 	EXP 	trial_text: autoDraw = False
+13788.2255 	EXP 	blank_screen_text: autoDraw = True
+13790.3530 	EXP 	blank_screen_text: autoDraw = False
+13790.3530 	EXP 	trial_text: text = 'Ta          Da'
+13790.3530 	EXP 	trial_text: autoDraw = True
+13796.3313 	DATA 	Keypress: left
+13796.3361 	EXP 	New trial (rep=49, index=0): None
+13796.3504 	EXP 	trial_text: autoDraw = False
+13796.3504 	EXP 	blank_screen_text: autoDraw = True
+13798.4444 	EXP 	blank_screen_text: autoDraw = False
+13798.4444 	EXP 	trial_text: text = 'Ka          Ga'
+13798.4444 	EXP 	trial_text: autoDraw = True
+13803.1798 	DATA 	Keypress: left
+13803.1956 	EXP 	trial_text: autoDraw = False
+13803.1956 	EXP 	intrial_break_text: autoDraw = True
+13825.8893 	DATA 	Keypress: space
+13825.8904 	EXP 	New trial (rep=1, index=0): None
+13825.8960 	EXP 	intrial_break_text: autoDraw = False
+13825.8960 	EXP 	cross_polygon: autoDraw = True
+13826.4017 	EXP 	Created sequence: random, trialTypes=1, nReps=50, seed=None
+13826.4021 	EXP 	New trial (rep=0, index=0): None
+13826.4145 	EXP 	cross_polygon: autoDraw = False
+13826.4145 	EXP 	blank_screen_text: autoDraw = True
+13828.5247 	EXP 	blank_screen_text: autoDraw = False
+13828.5247 	EXP 	trial_text: text = 'Ta          Da'
+13828.5247 	EXP 	trial_text: autoDraw = True
+13833.3403 	DATA 	Keypress: left
+13833.3458 	EXP 	New trial (rep=1, index=0): None
+13833.3546 	EXP 	trial_text: autoDraw = False
+13833.3546 	EXP 	blank_screen_text: autoDraw = True
+13834.7645 	EXP 	blank_screen_text: autoDraw = False
+13834.7645 	EXP 	trial_text: text = 'Pa          Ba'
+13834.7645 	EXP 	trial_text: autoDraw = True
+13837.5563 	DATA 	Keypress: left
+13837.5612 	EXP 	New trial (rep=2, index=0): None
+13837.5753 	EXP 	trial_text: autoDraw = False
+13837.5753 	EXP 	blank_screen_text: autoDraw = True
+13839.7361 	EXP 	blank_screen_text: autoDraw = False
+13839.7361 	EXP 	trial_text: text = 'Ka          Ga'
+13839.7361 	EXP 	trial_text: autoDraw = True
+13844.3131 	DATA 	Keypress: left
+13844.3178 	EXP 	New trial (rep=3, index=0): None
+13844.3321 	EXP 	trial_text: autoDraw = False
+13844.3321 	EXP 	blank_screen_text: autoDraw = True
+13846.3926 	EXP 	blank_screen_text: autoDraw = False
+13846.3926 	EXP 	trial_text: text = 'Ka          Ga'
+13846.3926 	EXP 	trial_text: autoDraw = True
+13850.8440 	DATA 	Keypress: left
+13850.8487 	EXP 	New trial (rep=4, index=0): None
+13850.8527 	EXP 	trial_text: autoDraw = False
+13850.8527 	EXP 	blank_screen_text: autoDraw = True
+13852.2904 	EXP 	blank_screen_text: autoDraw = False
+13852.2904 	EXP 	blank_screen_text: autoDraw = False
+13852.2904 	EXP 	trial_text: text = 'Ta          Da'
+13852.2904 	EXP 	trial_text: autoDraw = True
+13855.3960 	DATA 	Keypress: left
+13855.4015 	EXP 	New trial (rep=5, index=0): None
+13855.4104 	EXP 	trial_text: autoDraw = False
+13855.4104 	EXP 	blank_screen_text: autoDraw = True
+13857.4705 	EXP 	blank_screen_text: autoDraw = False
+13857.4705 	EXP 	trial_text: text = 'Pa          Ba'
+13857.4705 	EXP 	trial_text: autoDraw = True
+13861.8674 	DATA 	Keypress: left
+13861.8726 	EXP 	New trial (rep=6, index=0): None
+13861.8836 	EXP 	trial_text: autoDraw = False
+13861.8836 	EXP 	blank_screen_text: autoDraw = True
+13863.9771 	EXP 	blank_screen_text: autoDraw = False
+13863.9771 	EXP 	trial_text: text = 'Ta          Da'
+13863.9771 	EXP 	trial_text: autoDraw = True
+13868.5732 	DATA 	Keypress: left
+13868.5780 	EXP 	New trial (rep=7, index=0): None
+13868.5897 	EXP 	trial_text: autoDraw = False
+13868.5897 	EXP 	blank_screen_text: autoDraw = True
+13870.6839 	EXP 	blank_screen_text: autoDraw = False
+13870.6839 	EXP 	trial_text: text = 'Ta          Da'
+13870.6839 	EXP 	trial_text: autoDraw = True
+13877.0718 	DATA 	Keypress: left
+13877.0891 	EXP 	New trial (rep=8, index=0): None
+13877.0984 	EXP 	trial_text: autoDraw = False
+13877.0984 	EXP 	blank_screen_text: autoDraw = True
+13879.1755 	EXP 	blank_screen_text: autoDraw = False
+13879.1755 	EXP 	trial_text: text = 'Ta          Da'
+13879.1755 	EXP 	trial_text: autoDraw = True
+13884.5234 	DATA 	Keypress: right
+13884.5283 	EXP 	New trial (rep=9, index=0): None
+13884.5393 	EXP 	trial_text: autoDraw = False
+13884.5393 	EXP 	blank_screen_text: autoDraw = True
+13885.9658 	EXP 	blank_screen_text: autoDraw = False
+13885.9658 	EXP 	trial_text: text = 'Ka          Ga'
+13885.9658 	EXP 	trial_text: autoDraw = True
+13889.2692 	DATA 	Keypress: right
+13889.2742 	EXP 	New trial (rep=10, index=0): None
+13889.2856 	EXP 	trial_text: autoDraw = False
+13889.2856 	EXP 	blank_screen_text: autoDraw = True
+13891.4381 	EXP 	blank_screen_text: autoDraw = False
+13891.4381 	EXP 	trial_text: text = 'Pa          Ba'
+13891.4381 	EXP 	trial_text: autoDraw = True
+13895.8753 	DATA 	Keypress: left
+13895.8800 	EXP 	New trial (rep=11, index=0): None
+13895.8922 	EXP 	trial_text: autoDraw = False
+13895.8922 	EXP 	blank_screen_text: autoDraw = True
+13898.0196 	EXP 	blank_screen_text: autoDraw = False
+13898.0196 	EXP 	trial_text: text = 'Ta          Da'
+13898.0196 	EXP 	trial_text: autoDraw = True
+13902.3661 	DATA 	Keypress: left
+13902.3713 	EXP 	New trial (rep=12, index=0): None
+13902.3822 	EXP 	trial_text: autoDraw = False
+13902.3822 	EXP 	blank_screen_text: autoDraw = True
+13903.7589 	EXP 	blank_screen_text: autoDraw = False
+13903.7589 	EXP 	trial_text: text = 'Pa          Ba'
+13903.7589 	EXP 	trial_text: autoDraw = True
+13907.4217 	DATA 	Keypress: left
+13907.4267 	EXP 	New trial (rep=13, index=0): None
+13907.4379 	EXP 	trial_text: autoDraw = False
+13907.4379 	EXP 	blank_screen_text: autoDraw = True
+13909.5814 	EXP 	blank_screen_text: autoDraw = False
+13909.5814 	EXP 	trial_text: text = 'Pa          Ba'
+13909.5814 	EXP 	trial_text: autoDraw = True
+13914.4200 	DATA 	Keypress: left
+13914.4248 	EXP 	New trial (rep=14, index=0): None
+13914.4361 	EXP 	trial_text: autoDraw = False
+13914.4361 	EXP 	blank_screen_text: autoDraw = True
+13915.7960 	EXP 	blank_screen_text: autoDraw = False
+13915.7960 	EXP 	trial_text: text = 'Ta          Da'
+13915.7960 	EXP 	trial_text: autoDraw = True
+13918.2158 	DATA 	Keypress: left
+13918.2212 	EXP 	New trial (rep=15, index=0): None
+13918.2315 	EXP 	trial_text: autoDraw = False
+13918.2315 	EXP 	blank_screen_text: autoDraw = True
+13920.3173 	EXP 	blank_screen_text: autoDraw = False
+13920.3173 	EXP 	trial_text: text = 'Ka          Ga'
+13920.3173 	EXP 	trial_text: autoDraw = True
+13924.6375 	DATA 	Keypress: left
+13924.6424 	EXP 	New trial (rep=16, index=0): None
+13924.6545 	EXP 	trial_text: autoDraw = False
+13924.6545 	EXP 	blank_screen_text: autoDraw = True
+13926.7819 	EXP 	blank_screen_text: autoDraw = False
+13926.7819 	EXP 	trial_text: text = 'Ka          Ga'
+13926.7819 	EXP 	trial_text: autoDraw = True
+13934.4569 	DATA 	Keypress: right
+13934.4621 	EXP 	New trial (rep=17, index=0): None
+13934.4695 	EXP 	trial_text: autoDraw = False
+13934.4695 	EXP 	blank_screen_text: autoDraw = True
+13936.5417 	EXP 	blank_screen_text: autoDraw = False
+13936.5417 	EXP 	trial_text: text = 'Ka          Ga'
+13936.5417 	EXP 	trial_text: autoDraw = True
+13941.0189 	DATA 	Keypress: left
+13941.0238 	EXP 	New trial (rep=18, index=0): None
+13941.0383 	EXP 	trial_text: autoDraw = False
+13941.0383 	EXP 	blank_screen_text: autoDraw = True
+13943.1652 	EXP 	blank_screen_text: autoDraw = False
+13943.1652 	EXP 	trial_text: text = 'Pa          Ba'
+13943.1652 	EXP 	trial_text: autoDraw = True
+13949.3160 	DATA 	Keypress: left
+13949.3210 	EXP 	New trial (rep=19, index=0): None
+13949.3302 	EXP 	trial_text: autoDraw = False
+13949.3302 	EXP 	blank_screen_text: autoDraw = True
+13950.7727 	EXP 	blank_screen_text: autoDraw = False
+13950.7727 	EXP 	trial_text: text = 'Ta          Da'
+13950.7727 	EXP 	trial_text: autoDraw = True
+13953.1809 	DATA 	Keypress: left
+13953.1858 	EXP 	New trial (rep=20, index=0): None
+13953.2008 	EXP 	trial_text: autoDraw = False
+13953.2008 	EXP 	blank_screen_text: autoDraw = True
+13955.2609 	EXP 	blank_screen_text: autoDraw = False
+13955.2609 	EXP 	trial_text: text = 'Pa          Ba'
+13955.2609 	EXP 	trial_text: autoDraw = True
+13960.1567 	DATA 	Keypress: right
+13960.1617 	EXP 	New trial (rep=21, index=0): None
+13960.1737 	EXP 	trial_text: autoDraw = False
+13960.1737 	EXP 	blank_screen_text: autoDraw = True
+13961.5922 	EXP 	blank_screen_text: autoDraw = False
+13961.5922 	EXP 	trial_text: text = 'Ka          Ga'
+13961.5922 	EXP 	trial_text: autoDraw = True
+13964.1782 	DATA 	Keypress: right
+13964.1831 	EXP 	New trial (rep=22, index=0): None
+13964.1944 	EXP 	trial_text: autoDraw = False
+13964.1944 	EXP 	blank_screen_text: autoDraw = True
+13966.3550 	EXP 	blank_screen_text: autoDraw = False
+13966.3550 	EXP 	trial_text: text = 'Ka          Ga'
+13966.3550 	EXP 	trial_text: autoDraw = True
+13971.5793 	DATA 	Keypress: right
+13971.5850 	EXP 	New trial (rep=23, index=0): None
+13971.5941 	EXP 	trial_text: autoDraw = False
+13971.5941 	EXP 	blank_screen_text: autoDraw = True
+13973.6958 	EXP 	blank_screen_text: autoDraw = False
+13973.6958 	EXP 	trial_text: text = 'Pa          Ba'
+13973.6958 	EXP 	trial_text: autoDraw = True
+13978.4852 	DATA 	Keypress: left
+13978.4903 	EXP 	New trial (rep=24, index=0): None
+13978.5006 	EXP 	trial_text: autoDraw = False
+13978.5006 	EXP 	blank_screen_text: autoDraw = True
+13980.7195 	EXP 	blank_screen_text: autoDraw = False
+13980.7195 	EXP 	trial_text: text = 'Ka          Ga'
+13980.7195 	EXP 	trial_text: autoDraw = True
+13985.1051 	DATA 	Keypress: left
+13985.1098 	EXP 	New trial (rep=25, index=0): None
+13985.1251 	EXP 	trial_text: autoDraw = False
+13985.1251 	EXP 	blank_screen_text: autoDraw = True
+13986.5257 	EXP 	blank_screen_text: autoDraw = False
+13986.5257 	EXP 	trial_text: text = 'Ta          Da'
+13986.5257 	EXP 	trial_text: autoDraw = True
+13990.6242 	DATA 	Keypress: left
+13990.6441 	EXP 	New trial (rep=26, index=0): None
+13990.6547 	EXP 	trial_text: autoDraw = False
+13990.6547 	EXP 	blank_screen_text: autoDraw = True
+13992.7822 	EXP 	blank_screen_text: autoDraw = False
+13992.7822 	EXP 	trial_text: text = 'Pa          Ba'
+13992.7822 	EXP 	trial_text: autoDraw = True
+13999.2606 	DATA 	Keypress: right
+13999.2654 	EXP 	New trial (rep=27, index=0): None
+13999.2738 	EXP 	trial_text: autoDraw = False
+13999.2738 	EXP 	blank_screen_text: autoDraw = True
+14000.7816 	EXP 	blank_screen_text: autoDraw = False
+14000.7816 	EXP 	trial_text: text = 'Ta          Da'
+14000.7816 	EXP 	trial_text: autoDraw = True
+14003.1647 	DATA 	Keypress: left
+14003.1696 	EXP 	New trial (rep=28, index=0): None
+14003.1836 	EXP 	trial_text: autoDraw = False
+14003.1836 	EXP 	blank_screen_text: autoDraw = True
+14005.3025 	EXP 	blank_screen_text: autoDraw = False
+14005.3025 	EXP 	trial_text: text = 'Ta          Da'
+14005.3025 	EXP 	trial_text: autoDraw = True
+14009.6547 	DATA 	Keypress: down
+14010.8006 	DATA 	Keypress: left
+14010.8058 	EXP 	New trial (rep=29, index=0): None
+14010.8168 	EXP 	trial_text: autoDraw = False
+14010.8168 	EXP 	blank_screen_text: autoDraw = True
+14012.2429 	EXP 	blank_screen_text: autoDraw = False
+14012.2429 	EXP 	trial_text: text = 'Pa          Ba'
+14012.2429 	EXP 	trial_text: autoDraw = True
+14014.9846 	DATA 	Keypress: right
+14014.9896 	EXP 	New trial (rep=30, index=0): None
+14015.0037 	EXP 	trial_text: autoDraw = False
+14015.0037 	EXP 	blank_screen_text: autoDraw = True
+14017.1817 	EXP 	blank_screen_text: autoDraw = False
+14017.1817 	EXP 	trial_text: text = 'Pa          Ba'
+14017.1817 	EXP 	trial_text: autoDraw = True
+14021.8223 	DATA 	Keypress: left
+14021.8274 	EXP 	New trial (rep=31, index=0): None
+14021.8357 	EXP 	trial_text: autoDraw = False
+14021.8357 	EXP 	blank_screen_text: autoDraw = True
+14023.2123 	EXP 	blank_screen_text: autoDraw = False
+14023.2123 	EXP 	trial_text: text = 'Ka          Ga'
+14023.2123 	EXP 	trial_text: autoDraw = True
+14026.9412 	DATA 	Keypress: left
+14026.9464 	EXP 	New trial (rep=32, index=0): None
+14026.9583 	EXP 	trial_text: autoDraw = False
+14026.9583 	EXP 	blank_screen_text: autoDraw = True
+14028.3174 	EXP 	blank_screen_text: autoDraw = False
+14028.3174 	EXP 	trial_text: text = 'Pa          Ba'
+14028.3174 	EXP 	trial_text: autoDraw = True
+14034.2567 	DATA 	Keypress: right
+14034.2620 	EXP 	New trial (rep=33, index=0): None
+14034.2734 	EXP 	trial_text: autoDraw = False
+14034.2734 	EXP 	blank_screen_text: autoDraw = True
+14036.4006 	EXP 	blank_screen_text: autoDraw = False
+14036.4006 	EXP 	trial_text: text = 'Ka          Ga'
+14036.4006 	EXP 	trial_text: autoDraw = True
+14040.9892 	DATA 	Keypress: left
+14040.9945 	EXP 	New trial (rep=34, index=0): None
+14041.0052 	EXP 	trial_text: autoDraw = False
+14041.0052 	EXP 	blank_screen_text: autoDraw = True
+14043.1239 	EXP 	blank_screen_text: autoDraw = False
+14043.1239 	EXP 	trial_text: text = 'Pa          Ba'
+14043.1239 	EXP 	trial_text: autoDraw = True
+14047.5308 	DATA 	Keypress: left
+14047.5362 	EXP 	New trial (rep=35, index=0): None
+14047.5450 	EXP 	trial_text: autoDraw = False
+14047.5450 	EXP 	blank_screen_text: autoDraw = True
+14049.6139 	EXP 	blank_screen_text: autoDraw = False
+14049.6139 	EXP 	trial_text: text = 'Pa          Ba'
+14049.6139 	EXP 	trial_text: autoDraw = True
+14053.9161 	DATA 	Keypress: left
+14053.9208 	EXP 	New trial (rep=36, index=0): None
+14053.9350 	EXP 	trial_text: autoDraw = False
+14053.9350 	EXP 	blank_screen_text: autoDraw = True
+14055.9958 	EXP 	blank_screen_text: autoDraw = False
+14055.9958 	EXP 	trial_text: text = 'Ta          Da'
+14055.9958 	EXP 	trial_text: autoDraw = True
+14060.8589 	DATA 	Keypress: left
+14060.8643 	EXP 	New trial (rep=37, index=0): None
+14060.8752 	EXP 	trial_text: autoDraw = False
+14060.8752 	EXP 	blank_screen_text: autoDraw = True
+14062.9356 	EXP 	blank_screen_text: autoDraw = False
+14062.9356 	EXP 	trial_text: text = 'Pa          Ba'
+14062.9356 	EXP 	trial_text: autoDraw = True
+14067.2678 	DATA 	Keypress: left
+14067.2727 	EXP 	New trial (rep=38, index=0): None
+14067.2821 	EXP 	trial_text: autoDraw = False
+14067.2821 	EXP 	blank_screen_text: autoDraw = True
+14069.3673 	EXP 	blank_screen_text: autoDraw = False
+14069.3673 	EXP 	trial_text: text = 'Ka          Ga'
+14069.3673 	EXP 	trial_text: autoDraw = True
+14073.7628 	DATA 	Keypress: right
+14073.7681 	EXP 	New trial (rep=39, index=0): None
+14073.7797 	EXP 	trial_text: autoDraw = False
+14073.7797 	EXP 	blank_screen_text: autoDraw = True
+14075.1730 	EXP 	blank_screen_text: autoDraw = False
+14075.1730 	EXP 	trial_text: text = 'Ka          Ga'
+14075.1730 	EXP 	trial_text: autoDraw = True
+14081.0400 	DATA 	Keypress: left
+14081.0453 	EXP 	New trial (rep=40, index=0): None
+14081.0539 	EXP 	trial_text: autoDraw = False
+14081.0539 	EXP 	blank_screen_text: autoDraw = True
+14083.2398 	EXP 	blank_screen_text: autoDraw = False
+14083.2398 	EXP 	trial_text: text = 'Pa          Ba'
+14083.2398 	EXP 	trial_text: autoDraw = True
+14088.0192 	DATA 	Keypress: left
+14088.0241 	EXP 	New trial (rep=41, index=0): None
+14088.0358 	EXP 	trial_text: autoDraw = False
+14088.0358 	EXP 	blank_screen_text: autoDraw = True
+14089.3789 	EXP 	blank_screen_text: autoDraw = False
+14089.3789 	EXP 	trial_text: text = 'Ka          Ga'
+14089.3789 	EXP 	trial_text: autoDraw = True
+14091.7318 	DATA 	Keypress: left
+14091.7371 	EXP 	New trial (rep=42, index=0): None
+14091.7478 	EXP 	trial_text: autoDraw = False
+14091.7478 	EXP 	blank_screen_text: autoDraw = True
+14093.8422 	EXP 	blank_screen_text: autoDraw = False
+14093.8422 	EXP 	trial_text: text = 'Ta          Da'
+14093.8422 	EXP 	trial_text: autoDraw = True
+14099.6451 	DATA 	Keypress: left
+14099.6499 	EXP 	New trial (rep=43, index=0): None
+14099.6652 	EXP 	trial_text: autoDraw = False
+14099.6652 	EXP 	blank_screen_text: autoDraw = True
+14101.7252 	EXP 	blank_screen_text: autoDraw = False
+14101.7252 	EXP 	trial_text: text = 'Ta          Da'
+14101.7252 	EXP 	trial_text: autoDraw = True
+14106.0350 	DATA 	Keypress: left
+14106.0398 	EXP 	New trial (rep=44, index=0): None
+14106.0545 	EXP 	trial_text: autoDraw = False
+14106.0545 	EXP 	blank_screen_text: autoDraw = True
+14108.1478 	EXP 	blank_screen_text: autoDraw = False
+14108.1478 	EXP 	trial_text: text = 'Pa          Ba'
+14108.1478 	EXP 	trial_text: autoDraw = True
+14113.2453 	DATA 	Keypress: left
+14113.2502 	EXP 	New trial (rep=45, index=0): None
+14113.2613 	EXP 	trial_text: autoDraw = False
+14113.2613 	EXP 	blank_screen_text: autoDraw = True
+14114.6629 	EXP 	blank_screen_text: autoDraw = False
+14114.6629 	EXP 	trial_text: text = 'Ta          Da'
+14114.6629 	EXP 	trial_text: autoDraw = True
+14117.1851 	DATA 	Keypress: left
+14117.1902 	EXP 	New trial (rep=46, index=0): None
+14117.1985 	EXP 	trial_text: autoDraw = False
+14117.1985 	EXP 	blank_screen_text: autoDraw = True
+14119.2757 	EXP 	blank_screen_text: autoDraw = False
+14119.2757 	EXP 	trial_text: text = 'Ta          Da'
+14119.2757 	EXP 	trial_text: autoDraw = True
+14124.0645 	DATA 	Keypress: right
+14124.0696 	EXP 	New trial (rep=47, index=0): None
+14124.0805 	EXP 	trial_text: autoDraw = False
+14124.0805 	EXP 	blank_screen_text: autoDraw = True
+14126.1409 	EXP 	blank_screen_text: autoDraw = False
+14126.1409 	EXP 	trial_text: text = 'Ta          Da'
+14126.1409 	EXP 	trial_text: autoDraw = True
+14132.1700 	DATA 	Keypress: left
+14132.1753 	EXP 	New trial (rep=48, index=0): None
+14132.1886 	EXP 	trial_text: autoDraw = False
+14132.1886 	EXP 	blank_screen_text: autoDraw = True
+14133.5566 	EXP 	blank_screen_text: autoDraw = False
+14133.5566 	EXP 	trial_text: text = 'Ta          Da'
+14133.5566 	EXP 	trial_text: autoDraw = True
+14135.7613 	DATA 	Keypress: left
+14135.7662 	EXP 	New trial (rep=49, index=0): None
+14135.7756 	EXP 	trial_text: autoDraw = False
+14135.7756 	EXP 	blank_screen_text: autoDraw = True
+14137.8860 	EXP 	blank_screen_text: autoDraw = False
+14137.8860 	EXP 	trial_text: text = 'Ta          Da'
+14137.8860 	EXP 	trial_text: autoDraw = True
+14142.2719 	DATA 	Keypress: right
+14142.2995 	EXP 	trial_text: autoDraw = False
+14142.2995 	EXP 	intrial_break_text: autoDraw = True
+14412.2352 	DATA 	Keypress: space
+14412.2362 	EXP 	New trial (rep=2, index=0): None
+14412.2479 	EXP 	intrial_break_text: autoDraw = False
+14412.2479 	EXP 	cross_polygon: autoDraw = True
+14412.7441 	EXP 	Created sequence: random, trialTypes=1, nReps=50, seed=None
+14412.7444 	EXP 	New trial (rep=0, index=0): None
+14412.7515 	EXP 	cross_polygon: autoDraw = False
+14412.7515 	EXP 	blank_screen_text: autoDraw = True
+14414.1809 	EXP 	blank_screen_text: autoDraw = False
+14414.1809 	EXP 	trial_text: text = 'Ka          Ga'
+14414.1809 	EXP 	trial_text: autoDraw = True
+14417.5178 	DATA 	Keypress: left
+14417.5237 	EXP 	New trial (rep=1, index=0): None
+14417.5340 	EXP 	trial_text: autoDraw = False
+14417.5340 	EXP 	blank_screen_text: autoDraw = True
+14418.9110 	EXP 	blank_screen_text: autoDraw = False
+14418.9110 	EXP 	trial_text: text = 'Ka          Ga'
+14418.9110 	EXP 	trial_text: autoDraw = True
+14617.7366 	DATA 	Keypress: escape
+14629.5164 	EXP 	window1: mouseVisible = True

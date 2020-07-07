@@ -15,7 +15,7 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import gui, visual, core, data, event, logging, clock
+from psychopy import gui, visual, core, data, event, logging, clock, sound
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 import numpy as np  # whole numpy lib is available, prepend 'np.'
@@ -27,9 +27,14 @@ import sys  # to get file system encoding
 import pandas as pd
 import scipy.io
 import random
-from TDT_function import conditions
+from TDT_function import conditions, Stimuli_Emilia, Circuit_Setup
+from tdt import DSPProject
 
 from psychopy.hardware import keyboard
+
+project = DSPProject()
+circuit = project.load_circuit('circuit_long_trigger.rcx', 'RX8')
+fs_circuit=circuit.fs
 
 #%% Set Up Path and Information
 
@@ -70,7 +75,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 #%% Setup the Window
 
 win = visual.Window(
-    size=(1024, 768), fullscr=False, screen=0, 
+    size=(2000, 1500), fullscr=False, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color='#000000', colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -218,9 +223,9 @@ trial_text = visual.TextStim(win=win, name='trial_text',
     languageStyle='LTR',
     depth=0.0);
 trial_key_resp = keyboard.Keyboard()
-#trial_sound = sound.Sound('A', secs=-1, stereo=True, sampleRate = 22050, hamming=True,
-#    name='trial_sound')
-#trial_sound.setVolume(1)
+trial_sound = sound.Sound('A', secs=-1, stereo=True, sampleRate = 22050, hamming=True,
+    name='trial_sound')
+trial_sound.setVolume(1)
 
 # Initialize components for Routine "intrial_break"
 intrial_breakClock = core.Clock()
@@ -641,6 +646,7 @@ thisExp.nextEntry()
 # the Routine "instructions2" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
+'''
 #%% Prepare to start Routine "practice_instructions"
 
 continueRoutine = True
@@ -741,7 +747,7 @@ thisExp.nextEntry()
 routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
-practice_outer_loop = data.TrialHandler(nReps=2, method='random', 
+practice_outer_loop = data.TrialHandler(nReps=1, method='random', 
     extraInfo=expInfo, originPath=-1,
     trialList=[None],
     seed=None, name='practice_outer_loop')
@@ -1201,7 +1207,7 @@ for thisPractice_outer_loop in practice_outer_loop:
     thisExp.nextEntry()
     
 # completed 2 repeats of 'practice_outer_loop'
-
+'''
 # set up handler to look after randomisation of conditions etc
 outer_loop = data.TrialHandler(nReps=2, method='random', 
     extraInfo=expInfo, originPath=-1,
@@ -1228,34 +1234,8 @@ for thisOuter_loop in outer_loop:
         seed=None, name='trials_2Hz_outer_loop')
     thisExp.addLoop(trials_outer_loop)  # add the loop to the experiment
     thisTrials_outer_loop = trials_outer_loop.trialList[0]  # so we can initialise stimuli with some values
-    
-    # Load csv file for storing trial data.
-    trials_list = pd.read_csv('Trials.csv', header=0)
-    Pair_list = trials_list['Pair']
-    Pair_to_show = trials_list['Pair_screen']
-    Gender_list = trials_list['Gender']
-    Syllable_list = trials_list['Syllable']
-    answer = trials_list['corrAns']
-    
-    # Load stimulation & sound stimuli arrays. 
-    frequency_two_array = np.load('array_two.npy')
-    frequency_six_array = np.load('array_six.npy')
-    random_stim_array = np.load('random_stim.npy')
-    no_stim_array = np.load('no_stim.npy')
-    two_array = np.load('twohzstimuli.npy')
-    six_array = np.load('sixhzstimuli.npy')
-    
-    # Load rt arrays
-    rt2 = pd.read_csv('rt2.csv')['reaction time']
-    rt6 = pd.read_csv('rt6.csv')['reaction time']
 
-    
-    # Load stim trig arrays.
-    six_trig = np.load('sixhz_trig.npy')
-    two_trig = np.load('twohz_trig.npy')
-    rand_two = np.load('rand_trig.npy')
-    none_two = np.load('nostim_trig.npy')
-    
+
     # abbreviate parameter names if possible (e.g. rgb = thisTrials_2Hz_outer_loop.rgb)
     if thisTrials_outer_loop != None:
         for paramName in thisTrials_outer_loop:
@@ -1439,123 +1419,11 @@ for thisOuter_loop in outer_loop:
             # Select the stimulation condition between: 2Hz, 6Hz, no stim, random stim. 
             n = 10
             T_index = np.random.choice(n)
-            if T_index in [0, 1, 2, 3]:
-                tactile_freq = '2'
-                frequency_array = frequency_two_array # This selects the corresponding sitmulation array.
-                stimuli_array = two_array # This selects the corresponding auditory stimuli array.
-                trig = two_trig # This selects the corresponding trigger array.
-                rt = rt2
-                if T_index == 0:
-                    syl_list = list(range(0, 12, 1)) #syl list specifies indexes of the stimuli_array which correspond to the phase chosen.
-                    cond = 'Phase 1 2Hz' # This is to store in the csv
-                elif T_index == 1 :
-                    syl_list = list(range(12, 24, 1))
-                    cond = 'Phase 2 2Hz'
-                elif T_index == 2:
-                    syl_list = list(range(24, 36, 1))
-                    cond = 'Phase 3 2Hz'
-                elif T_index == 3:
-                    syl_list = list(range(36, 48, 1))
-                    cond = 'Phase 4 2Hz'
+            stim = Stimuli_Emilia(T_index,-3,circuit)
                 
-            elif T_index in [4, 5, 6, 7]:
-                tactile_freq = '6'
-                frequency_array = frequency_six_array
-                stimuli_array = six_array
-                trig = six_trig
-                rt = rt6
-                if T_index == 4:
-                    syl_list = list(range(0, 12, 1))
-                    cond = 'Phase 1 6Hz'
-                elif T_index == 5 :
-                    syl_list = list(range(12, 24, 1))
-                    cond = 'Phase 2 6Hz'
-                elif T_index == 6:
-                    syl_list = list(range(24, 36, 1))
-                    cond = 'Phase 3 6Hz'
-                elif T_index == 7:
-                    syl_list = list(range(36, 48, 1))
-                    cond = 'Phase 4 6Hz'
-                
-            elif T_index == 8: 
-                tactile_freq = 'None'
-                frequency_array = np.zeros(len(six_array))
-                cond = 'No stim'
-                syl_list = 'None'
-                stimuli_array = two_array
-                trig = rand_two
-                rt = rt2
-           
-            elif T_index == 9:
-                tactile_freq = 'Random'
-                cond = 'Rand'
-                syl_list = 'None'
-                stimuli_array = two_array
-                trig = none_two
-                rt = rt2
-            
-            #TThis is in order to select a random section of the random stimulation array.
-            Ltwo = len(two_array[0])
-            if tactile_freq == 'Random': 
-                n = 20
-                R_index = np.random.choice(n)
-                rand = random_stim_array[R_index] 
-                #rand =  np.zeros(len(six_array))
-                for i in range(0, Ltwo):
-                    frequency_array = rand[i:i+Ltwo]
-
-            stim = frequency_array.ravel() # Flattens the stimulation array.
-            
-            #SELECTING SYLLABLE STIMULUS & RANDOM DELAY.
-            # Select speech stimulus to play.
-            if syl_list == 'None':
-                x = 48
-                S_index = np.random.choice(x, replace=False)
-            else:
-                S_index = np.random.choice(syl_list) # Selects a random index (corresponds to a syllable) from the syl_list (phase) specified earlier.
-                
-            Syllable = stimuli_array[S_index,:] # Selects the syllable using this index.
-            Syllable = Syllable.ravel() # Flattens syllable 
-        
-            # SELECTING RANDOM DELAY.
-            # Add random delay between onset of noise & onset of tactile stimulation & stimuli.
-            # Delay is between 1-1.5 seconds
-            delay_length = random.randint(22049, 33074) 
-            delay = np.zeros((delay_length, 1))
-            trig = np.concatenate([delay, trig]) # Add delay to the beginning of the trigger array.
-            delay = delay.ravel()
-            Syllable = np.concatenate([delay, Syllable]) # Add the same delay to the beginning of the speech stimulus.
-            length = len(Syllable)
-            stim = np.concatenate([delay, stim]) # Add delay to the beginning of the stimulation array.
-            
-            # LOADING NOISE
-            # Load noise file.
-            filename = (str(2) + '.mat')
-            noise = scipy.io.loadmat('SNR_list/' + filename, appendmat=False)
-            noise = noise['newSNR']
-            noise = noise.ravel()
-            noise = np.concatenate([noise, noise, noise]) # Make the noise long so it can then be cut.
-            noise = noise[:length] #Make the noise the same length as the syllable (which now has delay at the beginning)
-                
-            # Mix noise with speech stimulus.
-            Stimulus = noise + Syllable # Mix noise & syllable
-            
-            # FINDING CONDITIONS FROM CSV FILE & ADDING EEG TRIGGERS.
-            # Find conditions associated with the stimulus.
-            Pair = Pair_list[S_index]
-            Pair_show = Pair_to_show[S_index]
-            Gender = Gender_list[S_index]
-            Syllable_played = Syllable_list[S_index]
-            corrAns = answer[S_index]
-            
-            Fs = 22050 # CHANGE IF NECESSARY
-            reaction_time = (rt[S_index]) # Find when the actual sylable started so this can be subtracted from overall reaction time so that RT starts when syllable does not at the beginning of the trial.
-            reaction_time = int(reaction_time[1:])
-            reaction_time = (reaction_time+ len(delay))/Fs
-                
-            trial_text.setText(Pair_show)
-            #trial_sound.setSound(Stimulus, hamming=True)
-            #trial_sound.setVolume(1, log=False)
+            trial_text.setText(stim.pair_show)
+            stim.load_into_buffer()
+            k=0
             
             # keep track of which components have finished
             trial_Components = [trial_text, trial_key_resp]
@@ -1572,9 +1440,10 @@ for thisOuter_loop in outer_loop:
             trialClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
             frameN = -1
             
-            length = (len(Syllable)/Fs)+1
-            
+            length = stim.length+1
+            Started = False
             # -------Run Routine "trial"-------
+            
             while continueRoutine:
                 # get current time
                 t = trialClock.getTime()
@@ -1613,12 +1482,13 @@ for thisOuter_loop in outer_loop:
                         trial_key_resp.keys = _trial_key_resp_allKeys[-1].name  # just the last key pressed
                         trial_key_resp.rt = _trial_key_resp_allKeys[-1].rt
                         # was this correct?
-                        if (trial_key_resp.keys == str(corrAns)) or (trial_key_resp.keys == corrAns):
+                        if (trial_key_resp.keys == str(stim.corrAns)) or (trial_key_resp.keys == stim.corrAns):
                             trial_key_resp.corr = 1
                         else:
                             trial_key_resp.corr = 0
                         # a response ends the routine
-                        #continueRoutine = False  
+                        continueRoutine = False  
+                        stim.stop()
                         
                 # *trial_text* updates
                 if trial_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -1638,22 +1508,29 @@ for thisOuter_loop in outer_loop:
                         win.timeOnFlip(trial_text, 'tStopRefresh')  # time at next scr refresh
                         trial_text.setAutoDraw(False)
                     
-                # start/stop trial_sound
-                #if trial_sound.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                #    # keep track of start time/frame for later
-                #    trial_sound.frameNStart = frameN  # exact frame index
-                #    trial_sound.tStart = t  # local t and not account for scr refresh
-                #    trial_sound.tStartRefresh = tThisFlipGlobal  # on global time
-                #    trial_sound.play(when=win)  # sync with win flip
+                 # start/stop trial_sound
+                if not Started and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    trial_sound.frameNStart = frameN  # exact frame index
+                    #trial_sound.tStart = t  # local t and not account for scr refresh
+                    #trial_sound.tStartRefresh = tThisFlipGlobal  # on global time
+                    #trial_sound.play(when=win)  # sync with win flip
+                    stim.start()
+                    Started = True
                     
-                #if trial_sound.status == STARTED:
-                #    # is it time to stop? (based on global clock, using actual start)
-                #    if tThisFlipGlobal > trial_sound.tStartRefresh + length-frameTolerance:
-                #        # keep track of stop time/frame for later
-                #        trial_sound.tStop = t  # not accounting for scr refresh
-                #        trial_sound.frameNStop = frameN  # exact frame index
-                #        win.timeOnFlip(trial_sound, 'tStopRefresh')  # time at next scr refresh
-                #        trial_sound.stop()
+                if Started:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlip > trial_sound.frameNStart  + stim.length/stim.Fs + 0.1 and k==0:
+                        # keep track of stop time/frame for later
+                        #trial_sound.tStop = t  # not accounting for scr refresh
+                        #trial_sound.frameNStop = frameN  # exact frame index
+                        #win.timeOnFlip(trial_sound, 'tStopRefresh')  # time at next scr refresh
+                        k=1
+                        stim.stop()
+                        
+                
+                
+                
                 
                 # check for quit (typically the Esc key)
                 if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1674,24 +1551,25 @@ for thisOuter_loop in outer_loop:
             
             # -------Ending Routine "trial_innerloop"-------
             #### END TRIAL ####
+            stim.stop()
             for thisComponent in trial_Components:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             trials_inner_loop.addData('trial_text.started', trial_text.tStartRefresh)
             trials_inner_loop.addData('trial_text.stopped', trial_text.tStopRefresh)
-            trials_inner_loop.addData('Stim freq', tactile_freq)
-            trials_inner_loop.addData('Cond', cond)
-            trials_inner_loop.addData('Syllable', Syllable_played)
-            trials_inner_loop.addData('Pair', Pair)
-            trials_inner_loop.addData('Pair_show', Pair_show)
-            trials_inner_loop.addData('Gender', Gender)
-            #trials_inner_loop.addData('Sound started', trial_sound.tStartRefresh)
-            #trials_inner_loop.addData('Sound stopped', trial_sound.tStopRefresh)
+            trials_inner_loop.addData('Stim freq', stim.frequency)
+            trials_inner_loop.addData('Cond', stim.type)
+            trials_inner_loop.addData('Syllable', stim.played_syllable)
+            trials_inner_loop.addData('Pair', stim.pair)
+            trials_inner_loop.addData('Pair_show', stim.pair_show)
+            trials_inner_loop.addData('Gender', stim.gender)
+            trials_inner_loop.addData('Sound started', stim.start_time)
+            trials_inner_loop.addData('Sound stopped', stim.start_time + stim.length*stim.Fs)
             # check responses
             if trial_key_resp.keys in ['', [], None]:  # No response was made
                 trial_key_resp.keys = None
                 # was no response the correct answer?!
-                if str(corrAns).lower() == 'none':
+                if str(stim.corrAns).lower() == 'none':
                    trial_key_resp.corr = 1;  # correct non-response
                 else:
                    trial_key_resp.corr = 0;  # failed to respond (incorrectly)
@@ -1701,7 +1579,7 @@ for thisOuter_loop in outer_loop:
             
             if trial_key_resp.keys != None:  # we had a response
                 trials_inner_loop.addData('trial_key_resp.rt', trial_key_resp.rt)
-                final_reaction_time = trial_key_resp.rt-reaction_time
+                final_reaction_time = trial_key_resp.rt - stim.reaction_time
                 trials_inner_loop.addData('Reaction time', final_reaction_time)
 
                 
