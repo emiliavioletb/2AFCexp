@@ -1,8 +1,12 @@
-# 2AFCexp
+# Tactile stimulation study
+
+This repository contains the code used for a electroencephalography study exploring the influence of tactile stimulation on neuronal oscillations and speech comprehension as part of a Master's thesis at Imperial College London.  
+
+## Instructions for use
 
 N.B. TO START THE EXPERIMENTS PRESS THE 's' KEY ON THE START SCREEN ('Please wait for the experimenter')
 
-STAIRCASE 
+### Staircase 
 
 62 - originPath='/Users/emilia/Desktop/Staircase/staircase_trial.py'
 
@@ -16,7 +20,7 @@ Line 240 & 336 = 'Fs = 22050'
 
 
 
-FIXED SNR STUDY 
+### Fixed signal-to-noise study
 
 'Parameters practice' has relative path for sound files in the practice loop (/Syllables/Ka.mat)
 
